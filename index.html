@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xentar AI Inc. — Redefine How You Work</title>
+  <meta name="description" content="Xentar AI Inc. builds cutting-edge AI-powered productivity apps for iOS and Android that transform the way you work." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav-wrapper" id="navbar">
+    <nav class="nav-inner">
+      <a href="#" class="logo">
+        <span class="logo-icon">✦</span>
+        <span class="logo-text">Xentar <span class="logo-ai">AI</span></span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#platform">Platform</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="nav-divider"></li>
+        <li><a href="pages/terms.html">Terms of Use</a></li>
+        <li><a href="pages/privacy.html">Privacy Policy</a></li>
+        <li class="nav-cta"><a href="#waitlist" class="btn-nav">Get Early Access</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ===== MOBILE DRAWER ===== -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <ul>
+      <li><a href="#about" onclick="closeDrawer()">About</a></li>
+      <li><a href="#products" onclick="closeDrawer()">Products</a></li>
+      <li><a href="#platform" onclick="closeDrawer()">Platform</a></li>
+      <li><a href="#contact" onclick="closeDrawer()">Contact</a></li>
+      <li class="drawer-divider"></li>
+      <li><a href="pages/about.html" onclick="closeDrawer()">About Us</a></li>
+      <li><a href="pages/terms.html" onclick="closeDrawer()">Terms of Use</a></li>
+      <li><a href="pages/privacy.html" onclick="closeDrawer()">Privacy Policy</a></li>
+      <li><a href="pages/contact.html" onclick="closeDrawer()">Contact Us</a></li>
+      <li><a href="#waitlist" class="btn-drawer" onclick="closeDrawer()">Get Early Access</a></li>
+    </ul>
+  </div>
+  <div class="drawer-overlay" id="drawer-overlay" onclick="closeDrawer()"></div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="grid-lines"></div>
+    </div>
+    <div class="hero-content">
+      <div class="badge">
+        <span class="badge-dot"></span>
+        AI-Powered Productivity · iOS &amp; Android
+      </div>
+      <h1 class="hero-headline">
+        Transform the way<br />
+        <span class="gradient-text">you work, forever.</span>
+      </h1>
+      <p class="hero-sub">
+        Xentar AI builds intelligent productivity apps that learn your workflow,
+        automate the repetitive, and free you to do the work that actually matters —
+        right from your pocket.
+      </p>
+      <div class="hero-actions">
+        <a href="#waitlist" class="btn-primary">
+          <span>Join the Waitlist</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#products" class="btn-ghost">See our apps</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">10x</span><span class="stat-label">Faster workflows</span></div>
+        <div class="stat-sep"></div>
+        <div class="stat"><span class="stat-num">iOS &amp; Android</span><span class="stat-label">Native apps</span></div>
+        <div class="stat-sep"></div>
+        <div class="stat"><span class="stat-num">AI-First</span><span class="stat-label">Built from the ground up</span></div>
+      </div>
+    </div>
+    <div class="hero-phones">
+      <div class="phone phone-back">
+        <div class="phone-screen screen-back">
+          <div class="screen-header"><div class="sh-dot"></div><div class="sh-bar"></div></div>
+          <div class="screen-card sc-purple"><span>✦ AI Summary</span><div class="sc-lines"><div></div><div></div><div></div></div></div>
+          <div class="screen-card sc-light"><span>Today's Tasks</span><div class="sc-progress"><div class="sc-prog-fill" style="width:72%"></div></div><p>72% complete</p></div>
+        </div>
+      </div>
+      <div class="phone phone-front">
+        <div class="phone-screen screen-front">
+          <div class="screen-header"><div class="sh-dot"></div><div class="sh-bar"></div></div>
+          <div class="sf-greeting">Good morning ✦</div>
+          <div class="sf-headline">3 priorities today</div>
+          <div class="sf-task t1"><span class="t-dot"></span>Finalize Q2 proposal</div>
+          <div class="sf-task t2"><span class="t-dot td"></span>Review analytics report</div>
+          <div class="sf-task t3"><span class="t-dot"></span>Sync with design team</div>
+          <div class="sf-ai-chip">
+            <span class="chip-icon">✦</span>
+            <span>AI has 2 suggestions for you</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about section-pad" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="section-eyebrow">Who we are</p>
+          <h2 class="section-title">Cutting-edge SaaS,<br/><span class="gradient-text">built for humans</span></h2>
+          <p class="about-body">
+            Xentar AI Inc. is a software company on a mission to make AI work for real people.
+            We build beautiful, intelligent productivity apps that run natively on iOS and Android —
+            apps that feel like extensions of your mind rather than another tool to manage.
+          </p>
+          <p class="about-body">
+            We believe the next leap in human productivity won't come from bigger desktops — it'll come
+            from the device already in your hand. Our team builds for mobile-first, AI-first futures.
+          </p>
+          <a href="pages/about.html" class="btn-outline">Our story →</a>
+        </div>
+        <div class="about-pillars">
+          <div class="pillar">
+            <div class="pillar-icon">⚡</div>
+            <h3>AI-Native</h3>
+            <p>Every feature is designed around AI, not bolted on as an afterthought.</p>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">📱</div>
+            <h3>Mobile-First</h3>
+            <p>Crafted for the device you actually use all day — iOS and Android, flawlessly.</p>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">🔒</div>
+            <h3>Privacy-First</h3>
+            <p>Your data stays yours. We build with security and privacy at the foundation.</p>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">🌍</div>
+            <h3>Global Reach</h3>
+            <p>Built for everyone, from independent professionals to enterprise teams worldwide.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCTS ===== -->
+  <section class="products section-pad" id="products">
+    <div class="container">
+      <p class="section-eyebrow center">Our Apps</p>
+      <h2 class="section-title center">Productivity reimagined<br/><span class="gradient-text">for every workflow</span></h2>
+      <p class="section-sub center">Each app tackles a specific productivity bottleneck with deep AI integration and a delightful native experience.</p>
+
+      <div class="products-grid">
+
+        <div class="product-card card-featured">
+          <div class="product-badge">Live Now</div>
+          <div class="product-icon">📄</div>
+          <h3>Resuvia</h3>
+          <p class="product-tagline">AI Resume Optimizer for iOS</p>
+          <p class="product-desc">Upload your resume, paste a job URL. Resuvia uses Claude AI to rewrite and ATS-optimize every section for the exact role — in seconds. Land more interviews, effortlessly.</p>
+          <ul class="product-features">
+            <li>✦ ATS score analysis &amp; rewrite</li>
+            <li>✦ Job match scoring</li>
+            <li>✦ AI career roadmap (Pro)</li>
+            <li>✦ Export to PDF instantly</li>
+          </ul>
+          <div class="product-platforms">
+            <span class="platform-tag">iOS</span>
+            <span class="platform-tag coming">Android — Soon</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-badge coming-badge">Coming Soon</div>
+          <div class="product-icon">🧠</div>
+          <h3>FocusFlow</h3>
+          <p class="product-tagline">AI-Powered Task &amp; Focus Manager</p>
+          <p class="product-desc">An intelligent daily planner that reads your goals, priorities, and energy levels — then builds your day for you. Pomodoro, deep work sessions, and smart rescheduling powered by AI.</p>
+          <ul class="product-features">
+            <li>✦ Smart task prioritization</li>
+            <li>✦ Adaptive focus sessions</li>
+            <li>✦ Energy-aware scheduling</li>
+            <li>✦ Team collaboration mode</li>
+          </ul>
+          <div class="product-platforms">
+            <span class="platform-tag">iOS</span>
+            <span class="platform-tag">Android</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-badge coming-badge">Coming Soon</div>
+          <div class="product-icon">✉️</div>
+          <h3>InboxZen</h3>
+          <p class="product-tagline">AI Email &amp; Communication Hub</p>
+          <p class="product-desc">Stop drowning in email. InboxZen summarizes threads, drafts replies in your voice, flags what's truly urgent, and archives the rest — keeping your inbox at zero without the effort.</p>
+          <ul class="product-features">
+            <li>✦ Thread summarization</li>
+            <li>✦ AI-drafted replies</li>
+            <li>✦ Priority signal detection</li>
+            <li>✦ Multi-account support</li>
+          </ul>
+          <div class="product-platforms">
+            <span class="platform-tag">iOS</span>
+            <span class="platform-tag">Android</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-badge coming-badge">Coming Soon</div>
+          <div class="product-icon">📊</div>
+          <h3>MeetingMind</h3>
+          <p class="product-tagline">AI Meeting Notes &amp; Action Tracker</p>
+          <p class="product-desc">Record, transcribe, and summarize any meeting in real-time. MeetingMind extracts action items, assigns owners, and syncs decisions directly to your project tools — automatically.</p>
+          <ul class="product-features">
+            <li>✦ Real-time transcription</li>
+            <li>✦ Auto action-item extraction</li>
+            <li>✦ CRM &amp; Notion sync</li>
+            <li>✦ Smart follow-up reminders</li>
+          </ul>
+          <div class="product-platforms">
+            <span class="platform-tag">iOS</span>
+            <span class="platform-tag">Android</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PLATFORM ===== -->
+  <section class="platform section-pad" id="platform">
+    <div class="container">
+      <div class="platform-inner">
+        <div class="platform-text">
+          <p class="section-eyebrow">The Xentar Platform</p>
+          <h2 class="section-title">One AI layer.<br/><span class="gradient-text">Across every app.</span></h2>
+          <p class="platform-body">
+            All Xentar apps are built on a shared AI platform — meaning your context, preferences, and
+            workflows flow seamlessly between apps. Your career data in Resuvia informs FocusFlow's
+            schedule. MeetingMind outputs flow straight into InboxZen. It's a connected productivity
+            layer that gets smarter the more you use it.
+          </p>
+          <div class="platform-features">
+            <div class="pf-item">
+              <span class="pf-check">✦</span>
+              <div><strong>Shared AI Memory</strong><br/>Context learned in one app is available across all of them.</div>
+            </div>
+            <div class="pf-item">
+              <span class="pf-check">✦</span>
+              <div><strong>Cross-App Workflows</strong><br/>Chain actions across apps with natural language automation.</div>
+            </div>
+            <div class="pf-item">
+              <span class="pf-check">✦</span>
+              <div><strong>Single Sign-On</strong><br/>One account, one subscription tier, all apps included.</div>
+            </div>
+            <div class="pf-item">
+              <span class="pf-check">✦</span>
+              <div><strong>Enterprise-Grade Security</strong><br/>SOC 2-aligned architecture with end-to-end encryption.</div>
+            </div>
+          </div>
+        </div>
+        <div class="platform-visual">
+          <div class="pv-center">
+            <div class="pv-logo">✦<br/><small>Xentar AI</small></div>
+          </div>
+          <div class="pv-orbit">
+            <div class="pv-node pv-n1">Resuvia</div>
+            <div class="pv-node pv-n2">FocusFlow</div>
+            <div class="pv-node pv-n3">InboxZen</div>
+            <div class="pv-node pv-n4">MeetingMind</div>
+            <div class="pv-ring pv-ring-1"></div>
+            <div class="pv-ring pv-ring-2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WAITLIST ===== -->
+  <section class="waitlist section-pad" id="waitlist">
+    <div class="container">
+      <div class="waitlist-card">
+        <div class="wl-orb wl-orb-1"></div>
+        <div class="wl-orb wl-orb-2"></div>
+        <div class="wl-content">
+          <p class="section-eyebrow center" style="color:var(--lavender-light)">Early Access</p>
+          <h2 class="section-title center" style="color:#fff">Be the first to experience<br/><span class="gradient-text-light">the future of work</span></h2>
+          <p class="section-sub center" style="color:rgba(255,255,255,0.75)">Join thousands already on the waitlist. Get early access, founding member pricing, and a direct line to the team.</p>
+          <form class="wl-form" id="waitlist-form" onsubmit="handleWaitlist(event)">
+            <input type="email" placeholder="your@email.com" required class="wl-input" id="wl-email" />
+            <button type="submit" class="btn-primary wl-btn">
+              <span>Notify Me</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </form>
+          <p class="wl-note" id="wl-note">No spam, ever. Unsubscribe anytime.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <span class="logo-icon">✦</span>
+            <span class="logo-text">Xentar <span class="logo-ai">AI</span></span>
+          </a>
+          <p>Cutting-edge AI productivity apps<br/>for iOS and Android.</p>
+        </div>
+        <div class="footer-links-group">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="pages/about.html">About Us</a></li>
+            <li><a href="#products">Our Apps</a></li>
+            <li><a href="#platform">Platform</a></li>
+            <li><a href="#waitlist">Early Access</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-group">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="pages/terms.html">Terms of Use</a></li>
+            <li><a href="pages/privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-group">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="pages/contact.html">Contact Us</a></li>
+            <li><a href="https://github.com/xentarai" target="_blank" rel="noopener">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Xentar AI Inc. All rights reserved.</p>
+        <p>Built with ✦ to transform the way you work.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — Xentar AI Inc.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="pages.css" />
+</head>
+<body>
+  <header class="nav-wrapper" id="navbar">
+    <nav class="nav-inner">
+      <a href="../index.html" class="logo">
+        <span class="logo-icon">✦</span>
+        <span class="logo-text">Xentar <span class="logo-ai">AI</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#products">Products</a></li>
+        <li><a href="../index.html#platform">Platform</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+        <li class="nav-divider"></li>
+        <li><a href="terms.html">Terms of Use</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li class="nav-cta"><a href="../index.html#waitlist" class="btn-nav">Get Early Access</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </nav>
+  </header>
+
+  <div class="page-hero">
+    <div class="page-hero-bg"><div class="orb orb-1"></div><div class="orb orb-2"></div></div>
+    <div class="container">
+      <p class="section-eyebrow">Our Story</p>
+      <h1 class="section-title"><span class="gradient-text">About Xentar AI</span></h1>
+      <p class="page-hero-sub">We're on a mission to make AI work for real people — through beautiful, intelligent mobile apps.</p>
+    </div>
+  </div>
+
+  <section class="page-content section-pad">
+    <div class="container page-prose">
+      <h2>Who We Are</h2>
+      <p>Xentar AI Inc. is a cutting-edge SaaS company building the next generation of AI-powered productivity applications for iOS and Android. We believe that the most powerful computer in the world is already in your pocket — and we're here to unlock its full potential.</p>
+
+      <h2>Our Mission</h2>
+      <p>We exist to transform the way people work. Not with complexity, not with bloat — but with intelligent, beautifully designed apps that understand your goals and get out of your way. Every product we ship starts with a single question: <em>"What would this feel like if it just worked?"</em></p>
+
+      <h2>Our Vision</h2>
+      <p>A world where AI is a genuine productivity partner — not a gimmick. Where your phone helps you accomplish more meaningful work in less time, with less stress. Where the friction between your intentions and your outcomes simply disappears.</p>
+
+      <h2>Why Mobile-First?</h2>
+      <p>The smartphone has already replaced the laptop for billions of people around the world. Yet most productivity software is still designed for a desktop from 2010. We build for the way people actually work: on the go, in short bursts, across iOS and Android, with touch-first interfaces that feel native and effortless.</p>
+
+      <h2>Our Values</h2>
+      <ul>
+        <li><strong>AI-Native:</strong> Every feature is built around AI from day one — not added as an afterthought.</li>
+        <li><strong>Privacy-First:</strong> Your data is yours. We design with security and privacy at the foundation.</li>
+        <li><strong>Craft:</strong> We care deeply about the details — the animations, the copy, the edge cases.</li>
+        <li><strong>Honesty:</strong> We ship real products that do real things. No vaporware, no hype.</li>
+      </ul>
+
+      <div class="page-cta-block">
+        <p>Ready to experience the future of productivity?</p>
+        <a href="../index.html#waitlist" class="btn-primary">Join the Waitlist →</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top:none;padding-top:0">
+        <p>&copy; 2025 Xentar AI Inc. All rights reserved.</p>
+        <div style="display:flex;gap:20px;flex-wrap:wrap">
+          <a href="terms.html" style="color:rgba(255,255,255,0.4);text-decoration:none;font-size:0.82rem">Terms of Use</a>
+          <a href="privacy.html" style="color:rgba(255,255,255,0.4);text-decoration:none;font-size:0.82rem">Privacy Policy</a>
+          <a href="contact.html" style="color:rgba(255,255,255,0.4);text-decoration:none;font-size:0.82rem">Contact Us</a>
+          <a href="../index.html" style="color:rgba(255,255,255,0.4);text-decoration:none;font-size:0.82rem">Home</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 20));
+  </script>
+</body>
+</html>
