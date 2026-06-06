@@ -23,46 +23,18 @@ function closeDrawer() {
   document.body.style.overflow = '';
 }
 
-// Waitlist form
-function handleWaitlist(e) {
-  e.preventDefault();
-  const email = document.getElementById('wl-email').value.trim();
-  const note = document.getElementById('wl-note');
-  const btn = e.target.querySelector('button');
-
-  btn.disabled = true;
-  btn.innerHTML = '<span>Joining...</span>';
-
-  setTimeout(() => {
-    document.getElementById('wl-email').value = '';
-    note.textContent = `✓ You're on the list! We'll be in touch at ${email}`;
-    note.style.color = '#86EFAC';
-    note.style.fontWeight = '600';
-    btn.innerHTML = '<span>Joined ✓</span>';
-    btn.style.opacity = '0.7';
-  }, 900);
-}
 
 // Intersection observer — fade-in sections
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(el => {
     if (el.isIntersecting) {
-      el.target.classList.add('visible');
+      el.target.classList.remove('fade-in-ready');
       observer.unobserve(el.target);
     }
   });
 }, { threshold: 0.1 });
 
 document.querySelectorAll('.pillar, .product-card, .pf-item').forEach(el => {
-  el.style.opacity = '0';
-  el.style.transform = 'translateY(20px)';
-  el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+  el.classList.add('fade-in-ready');
   observer.observe(el);
 });
-
-document.addEventListener('animationend', () => {}, { once: true });
-
-// Polyfill for older iOS
-const style = document.createElement('style');
-style.textContent = '.visible { opacity: 1 !important; transform: translateY(0) !important; }';
-document.head.appendChild(style);

@@ -23,9 +23,9 @@
         <li><a href="../index.html#platform">Platform</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li class="nav-divider"></li>
-        <li><a href="terms.html">Terms of Use</a></li>
-        <li><a href="privacy.html">Privacy Policy</a></li>
-        <li class="nav-cta"><a href="../index.html#waitlist" class="btn-nav">Get Early Access</a></li>
+        <li><a href="legal/terms.html">Terms of Use</a></li>
+        <li><a href="legal/privacy.html">Privacy Policy</a></li>
+        <li class="nav-cta"><a href="../products/resuvia/" class="btn-nav">Get Resuvia</a></li>
       </ul>
       <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
     </nav>
@@ -36,60 +36,23 @@
     <div class="container">
       <p class="section-eyebrow">Get in Touch</p>
       <h1 class="section-title"><span class="gradient-text">Contact Us</span></h1>
-      <p class="page-hero-sub">Have a question, partnership idea, or just want to say hi? We'd love to hear from you.</p>
+      <p class="page-hero-sub">Have a question, partnership idea, or just want to say hi? Drop us an email.</p>
     </div>
   </div>
 
   <section class="page-content section-pad">
-    <div class="container">
-      <div class="contact-grid">
-        <div class="contact-info">
-          <h2 class="section-title" style="font-size:1.8rem">Let's talk</h2>
-          <p style="color:var(--text-secondary);line-height:1.75;margin-bottom:32px">Whether you're a user with feedback, a developer interested in partnering, or a journalist covering AI — our inbox is always open.</p>
+    <div class="container page-prose">
+      <h2>Email</h2>
+      <p>
+        <a href="mailto:contactus@xentarai.com">contactus@xentarai.com</a>
+      </p>
+      <p>Whether you have a question about our products, a partnership idea, or anything else — our inbox is open.</p>
 
-          <div class="contact-item">
-            <div class="ci-icon">✉️</div>
-            <div>
-              <strong>General Inquiries</strong>
-              <p>contactus@xentarai.com</p>
-            </div>
-          </div>
+      <h2>GitHub</h2>
+      <p><a href="https://github.com/xentarai" target="_blank" rel="noopener">github.com/xentarai</a></p>
 
-          <div style="margin-top:32px">
-            <a href="https://github.com/xentarai" target="_blank" rel="noopener" class="btn-outline">GitHub →</a>
-          </div>
-        </div>
-
-        <div class="contact-form-wrap">
-          <form class="contact-form" id="contact-form" onsubmit="handleContact(event)">
-            <h3>Send a message</h3>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="cf-name">Name</label>
-                <input type="text" id="cf-name" placeholder="Your name" required />
-              </div>
-              <div class="form-group">
-                <label for="cf-email">Email</label>
-                <input type="email" id="cf-email" placeholder="your@email.com" required />
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="cf-subject">Subject</label>
-              <select id="cf-subject">
-                <option value="general">General Inquiry</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="cf-message">Message</label>
-              <textarea id="cf-message" rows="5" placeholder="Tell us what's on your mind..." required></textarea>
-            </div>
-            <button type="submit" class="btn-primary" style="width:100%;justify-content:center">
-              <span>Send Message</span>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </button>
-            <p class="form-note" id="cf-note" style="display:none"></p>
-          </form>
-        </div>
+      <div class="page-cta-block">
+        <a href="../index.html" class="btn-outline">← Back to Home</a>
       </div>
     </div>
   </section>
@@ -100,36 +63,17 @@
         <p>&copy; 2025 Xentar AI Inc. All rights reserved.</p>
         <div style="display:flex;gap:20px;flex-wrap:wrap">
           <a href="about.html" style="color:rgba(255,255,255,0.4);text-decoration:none;font-size:0.82rem">About Us</a>
-          <a href="terms.html" style="color:rgba(255,255,255,0.4);text-decoration:none;font-size:0.82rem">Terms of Use</a>
-          <a href="privacy.html" style="color:rgba(255,255,255,0.4);text-decoration:none;font-size:0.82rem">Privacy Policy</a>
+          <a href="legal/terms.html" style="color:rgba(255,255,255,0.4);text-decoration:none;font-size:0.82rem">Terms of Use</a>
+          <a href="legal/privacy.html" style="color:rgba(255,255,255,0.4);text-decoration:none;font-size:0.82rem">Privacy Policy</a>
           <a href="../index.html" style="color:rgba(255,255,255,0.4);text-decoration:none;font-size:0.82rem">Home</a>
         </div>
       </div>
     </div>
   </footer>
+
   <script>
     const navbar = document.getElementById('navbar');
     window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 20));
-
-    function handleContact(e) {
-      e.preventDefault();
-      const btn = e.target.querySelector('button');
-      const note = document.getElementById('cf-note');
-      btn.disabled = true;
-      btn.innerHTML = '<span>Sending...</span>';
-      setTimeout(() => {
-        btn.innerHTML = '<span>Message Sent ✓</span>';
-        btn.style.opacity = '0.7';
-        note.style.display = 'block';
-        note.textContent = "Thanks! We'll get back to you within 1–2 business days.";
-        note.style.color = 'var(--violet)';
-        note.style.textAlign = 'center';
-        note.style.marginTop = '12px';
-        note.style.fontWeight = '500';
-        note.style.fontSize = '0.9rem';
-        document.getElementById('cf-message').value = '';
-      }, 1000);
-    }
   </script>
 </body>
 </html>

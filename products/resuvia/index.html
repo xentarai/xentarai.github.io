@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resuvia — AI Resume Analyzer &amp; Career Coach</title>
+  <meta name="description" content="Resuvia scans your resume against any job description and gives you an AI-powered score, targeted improvements, and career guidance — right from your phone." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../style.css" />
+  <link rel="stylesheet" href="../../pages/pages.css" />
+  <link rel="stylesheet" href="resuvia.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav-wrapper" id="navbar">
+    <nav class="nav-inner">
+      <a href="../../index.html" class="logo">
+        <span class="logo-icon">✦</span>
+        <span class="logo-text">Xentar <span class="logo-ai">AI</span></span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../../index.html#about">About</a></li>
+        <li><a href="../../index.html#products">Products</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li class="nav-divider"></li>
+        <li><a href="./terms.html">Terms of Use</a></li>
+        <li><a href="./privacy.html">Privacy Policy</a></li>
+        <li class="nav-cta"><a href="#download" class="btn-nav">Download Free</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- MOBILE DRAWER -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <ul>
+      <li><a href="../../index.html#about" onclick="closeDrawer()">About Xentar AI</a></li>
+      <li><a href="../../index.html#products" onclick="closeDrawer()">All Products</a></li>
+      <li><a href="#features" onclick="closeDrawer()">Features</a></li>
+      <li><a href="#pricing" onclick="closeDrawer()">Pricing</a></li>
+      <li class="drawer-divider"></li>
+      <li><a href="./terms.html" onclick="closeDrawer()">Terms of Use</a></li>
+      <li><a href="./privacy.html" onclick="closeDrawer()">Privacy Policy</a></li>
+      <li><a href="../../pages/contact.html" onclick="closeDrawer()">Contact Us</a></li>
+      <li><a href="#download" class="btn-drawer" onclick="closeDrawer()">Download Free</a></li>
+    </ul>
+  </div>
+  <div class="drawer-overlay" id="drawer-overlay" onclick="closeDrawer()"></div>
+
+  <!-- HERO -->
+  <section class="rv-hero">
+    <div class="rv-hero-bg">
+      <div class="orb rv-orb-1"></div>
+      <div class="orb rv-orb-2"></div>
+    </div>
+    <div class="rv-hero-inner">
+      <div class="rv-hero-text">
+        <div class="rv-app-badge">
+          <span class="rv-badge-dot"></span>
+          Available Free · iOS &amp; Android
+        </div>
+        <h1 class="section-title">
+          Land your dream job<br />
+          <span class="gradient-text">with AI on your side.</span>
+        </h1>
+        <p class="rv-hero-sub">
+          Resuvia scans your resume against any job description and gives you an instant compatibility score, targeted improvements, and AI-powered rewrites — right from your phone.
+        </p>
+        <div class="rv-hero-actions">
+          <a href="#download" class="btn-primary">
+            <span>Download Free</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#features" class="btn-ghost">See features</a>
+        </div>
+        <div class="rv-platforms">
+          <span class="rv-platform-tag">iPhone</span>
+          <span class="rv-platform-tag">iPad</span>
+          <span class="rv-platform-tag">Android</span>
+        </div>
+      </div>
+      <div class="rv-hero-phone">
+        <div class="rv-phone-frame">
+          <div class="rv-phone-screen">
+            <div class="rv-screen-bar">
+              <div class="rv-bar-dot"></div>
+              <div class="rv-bar-line"></div>
+            </div>
+            <div class="rv-score-ring">
+              <svg viewBox="0 0 120 120" width="110" height="110">
+                <circle cx="60" cy="60" r="50" fill="none" stroke="rgba(79,70,229,0.1)" stroke-width="10"/>
+                <circle cx="60" cy="60" r="50" fill="none" stroke="url(#scoreGrad)" stroke-width="10"
+                  stroke-linecap="round" stroke-dasharray="314" stroke-dashoffset="60"
+                  transform="rotate(-90 60 60)"/>
+                <defs>
+                  <linearGradient id="scoreGrad" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#4F46E5"/>
+                    <stop offset="100%" stop-color="#7C3AED"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+              <div class="rv-score-val">81<span>%</span></div>
+            </div>
+            <div class="rv-score-label">ATS Match Score</div>
+            <div class="rv-screen-cards">
+              <div class="rv-sc-item rv-sc-good"><span>✓</span> Keywords matched</div>
+              <div class="rv-sc-item rv-sc-warn"><span>!</span> 3 improvements ready</div>
+              <div class="rv-sc-item rv-sc-ai"><span>✦</span> AI rewrite available</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="rv-how section-pad">
+    <div class="container">
+      <p class="section-eyebrow center">How it works</p>
+      <h2 class="section-title center">Three steps to a<br /><span class="gradient-text">stronger application</span></h2>
+      <div class="rv-steps">
+        <div class="rv-step">
+          <div class="rv-step-num">1</div>
+          <div class="rv-step-icon">📄</div>
+          <h3>Upload your resume</h3>
+          <p>Import your existing resume as a PDF directly from your phone. Your document stays on your device — it is never uploaded to the cloud.</p>
+        </div>
+        <div class="rv-step-arrow">→</div>
+        <div class="rv-step">
+          <div class="rv-step-num">2</div>
+          <div class="rv-step-icon">🔗</div>
+          <h3>Add the job description</h3>
+          <p>Paste the job posting text or share a link from any job board. Resuvia reads the listing and extracts what matters most.</p>
+        </div>
+        <div class="rv-step-arrow">→</div>
+        <div class="rv-step">
+          <div class="rv-step-num">3</div>
+          <div class="rv-step-icon">✦</div>
+          <h3>Get your results</h3>
+          <p>Receive a detailed compatibility score, specific improvements to make, and AI-powered rewrites tailored to that exact role.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="rv-features section-pad" id="features" style="background: var(--lavender-ultra);">
+    <div class="container">
+      <p class="section-eyebrow center">Features</p>
+      <h2 class="section-title center">Everything you need<br /><span class="gradient-text">to get hired faster</span></h2>
+      <p class="section-sub center">Resuvia brings powerful AI analysis and practical career tools together in one mobile app.</p>
+      <div class="rv-features-grid">
+
+        <div class="rv-feature-card">
+          <div class="rv-feat-icon">🎯</div>
+          <h3>ATS Score Analysis</h3>
+          <p>See exactly how well your resume matches a job posting with a detailed compatibility score and a section-by-section breakdown. Know where you stand before you hit send.</p>
+        </div>
+
+        <div class="rv-feature-card">
+          <div class="rv-feat-icon">✍️</div>
+          <h3>AI-Powered Improvements</h3>
+          <p>Get specific, ready-to-use suggestions that strengthen your resume language and align it with what hiring managers — and the systems they use — look for.</p>
+        </div>
+
+        <div class="rv-feature-card">
+          <div class="rv-feat-icon">📋</div>
+          <h3>Resume &amp; Cover Letter Templates</h3>
+          <p>Download professionally designed resume and cover letter templates in multiple styles. Each template is clean, modern, and ready to send.</p>
+        </div>
+
+        <div class="rv-feature-card">
+          <div class="rv-feat-icon">🔍</div>
+          <h3>Real Job Matches</h3>
+          <p>Browse real job openings from top job boards, matched to the role you are targeting. One tap takes you directly to the listing so you can apply right away.</p>
+        </div>
+
+        <div class="rv-feature-card rv-feat-pro">
+          <div class="rv-pro-badge">Pro</div>
+          <div class="rv-feat-icon">🗺️</div>
+          <h3>AI Career Roadmap</h3>
+          <p>Get a personalized, step-by-step plan to reach your next career goal — with skill gaps identified, action items listed, and realistic timelines tailored to your profile.</p>
+        </div>
+
+        <div class="rv-feature-card rv-feat-pro">
+          <div class="rv-pro-badge">Pro</div>
+          <div class="rv-feat-icon">📂</div>
+          <h3>Resume Version History</h3>
+          <p>Save and revisit multiple tailored versions of your resume across different applications, so you never lose a strong version you worked hard to craft.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PRIVACY CALLOUT -->
+  <section class="rv-privacy section-pad">
+    <div class="container">
+      <div class="rv-privacy-card">
+        <div class="rv-privacy-icon">🔒</div>
+        <div class="rv-privacy-text">
+          <h2>Your resume stays on your device.</h2>
+          <p>Unlike other tools, Resuvia never uploads your resume content to the cloud. Your document is analyzed and stored only on your phone — kept private and secure at all times. We do not sell your data, and we never will.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="rv-pricing section-pad" id="pricing" style="background: var(--lavender-ultra);">
+    <div class="container">
+      <p class="section-eyebrow center">Pricing</p>
+      <h2 class="section-title center">Start free.<br /><span class="gradient-text">Upgrade when you are ready.</span></h2>
+      <p class="section-sub center">Resuvia is free to download and use every day. Unlock Pro for unlimited power and advanced tools.</p>
+      <div class="rv-tiers">
+
+        <div class="rv-tier">
+          <div class="rv-tier-header">
+            <h3>Free</h3>
+            <div class="rv-tier-price">
+              <span class="rv-price-num">$0</span>
+              <span class="rv-price-period">forever</span>
+            </div>
+            <p>Everything you need to start applying smarter, at no cost.</p>
+          </div>
+          <ul class="rv-tier-list">
+            <li><span class="rv-check">✓</span> 1 AI analysis per day</li>
+            <li><span class="rv-check">✓</span> ATS score &amp; detailed breakdown</li>
+            <li><span class="rv-check">✓</span> Targeted improvement suggestions</li>
+            <li><span class="rv-check">✓</span> 6 resume templates</li>
+            <li><span class="rv-check">✓</span> 1 resume download per day</li>
+            <li><span class="rv-check">✓</span> 1 cover letter download per day</li>
+            <li><span class="rv-check">✓</span> Real job board matches</li>
+            <li><span class="rv-muted">—</span> AI Career Roadmap</li>
+            <li><span class="rv-muted">—</span> Career Q&amp;A</li>
+            <li><span class="rv-muted">—</span> Resume Refinement</li>
+            <li><span class="rv-muted">—</span> Resume Version History</li>
+          </ul>
+          <a href="#download" class="btn-outline" style="width:100%;text-align:center;justify-content:center;">Download Free</a>
+        </div>
+
+        <div class="rv-tier rv-tier-pro">
+          <div class="rv-tier-popular">Most Popular</div>
+          <div class="rv-tier-header">
+            <h3>Pro</h3>
+            <div class="rv-tier-price">
+              <span class="rv-price-num" style="font-size:1.5rem;color:var(--violet)">Monthly subscription</span>
+            </div>
+            <p>For serious job seekers who want every advantage to land the right role.</p>
+          </div>
+          <ul class="rv-tier-list">
+            <li><span class="rv-check">✓</span> 20 AI analyses per day</li>
+            <li><span class="rv-check">✓</span> ATS score &amp; detailed breakdown</li>
+            <li><span class="rv-check">✓</span> Targeted improvement suggestions</li>
+            <li><span class="rv-check">✓</span> 16 resume templates</li>
+            <li><span class="rv-check">✓</span> Unlimited resume &amp; cover letter downloads</li>
+            <li><span class="rv-check">✓</span> Real job board matches</li>
+            <li><span class="rv-check">✓</span> AI Career Roadmap</li>
+            <li><span class="rv-check">✓</span> Career Q&amp;A (10 questions per analysis)</li>
+            <li><span class="rv-check">✓</span> Resume Refinement tool</li>
+            <li><span class="rv-check">✓</span> Resume Version History (up to 20 versions)</li>
+            <li><span class="rv-check">✓</span> No ads</li>
+          </ul>
+          <a href="#download" class="btn-primary" style="width:100%;text-align:center;justify-content:center;">Get Pro</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DOWNLOAD -->
+  <section class="rv-download section-pad" id="download">
+    <div class="container">
+      <div class="rv-download-card">
+        <div class="rv-dl-orb rv-dl-orb-1"></div>
+        <div class="rv-dl-orb rv-dl-orb-2"></div>
+        <div class="rv-dl-content">
+          <p class="section-eyebrow center" style="color: var(--lavender-light);">Get Started</p>
+          <h2 class="section-title center" style="color: #fff;">Free to download.<br /><span class="gradient-text-light">Start applying smarter today.</span></h2>
+          <div class="rv-store-badges">
+            <div class="rv-store-badge">
+              <span class="rv-store-icon">🍎</span>
+              <div>
+                <div class="rv-store-sub">Coming soon to the</div>
+                <div class="rv-store-name">App Store</div>
+              </div>
+            </div>
+            <div class="rv-store-badge">
+              <span class="rv-store-icon">▶</span>
+              <div>
+                <div class="rv-store-sub">Coming soon on</div>
+                <div class="rv-store-name">Google Play</div>
+              </div>
+            </div>
+          </div>
+          <p style="color: rgba(255,255,255,0.5); font-size: 0.85rem; margin-top: 20px;">Coming soon. Check back for download links.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEGAL -->
+  <section class="rv-legal section-pad" id="legal" style="background: var(--lavender-ultra);">
+    <div class="container">
+      <p class="section-eyebrow center">Legal</p>
+      <h2 class="section-title center" style="font-size: clamp(1.4rem, 3vw, 2rem);">Privacy &amp; Terms</h2>
+      <p class="section-sub center">We believe in being transparent about how Resuvia works and how your information is handled.</p>
+      <div class="rv-legal-cards">
+        <a href="./privacy.html" class="rv-legal-card">
+          <div class="rv-legal-icon">🔏</div>
+          <h3>Privacy Policy</h3>
+          <p>How we collect, use, and protect your personal information when you use Resuvia.</p>
+          <span class="rv-legal-link">Read Privacy Policy →</span>
+        </a>
+        <a href="./terms.html" class="rv-legal-card">
+          <div class="rv-legal-icon">📜</div>
+          <h3>Terms of Use</h3>
+          <p>The terms and conditions that govern your use of Resuvia and the Xentar AI platform.</p>
+          <span class="rv-legal-link">Read Terms of Use →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+        <p>&copy; 2025 Xentar AI Inc. All rights reserved. Resuvia is a product of Xentar AI Inc.</p>
+        <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+          <a href="./privacy.html" style="color: rgba(255,255,255,0.4); text-decoration: none; font-size: 0.82rem;">Privacy Policy</a>
+          <a href="./terms.html" style="color: rgba(255,255,255,0.4); text-decoration: none; font-size: 0.82rem;">Terms of Use</a>
+          <a href="../../pages/contact.html" style="color: rgba(255,255,255,0.4); text-decoration: none; font-size: 0.82rem;">Contact</a>
+          <a href="../../index.html" style="color: rgba(255,255,255,0.4); text-decoration: none; font-size: 0.82rem;">Home</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 20));
+
+    const hamburger = document.getElementById('hamburger');
+    const drawer = document.getElementById('mobile-drawer');
+    const overlay = document.getElementById('drawer-overlay');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      drawer.classList.toggle('open');
+      overlay.classList.toggle('open');
+    });
+
+    function closeDrawer() {
+      hamburger.classList.remove('open');
+      drawer.classList.remove('open');
+      overlay.classList.remove('open');
+    }
+  </script>
+</body>
+</html>

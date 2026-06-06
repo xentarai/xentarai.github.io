@@ -23,12 +23,13 @@
       <ul class="nav-links" id="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#products">Products</a></li>
+        <li><a href="products/resuvia/">Resuvia</a></li>
         <li><a href="#platform">Platform</a></li>
         <li><a href="#contact">Contact</a></li>
         <li class="nav-divider"></li>
-        <li><a href="pages/terms.html">Terms of Use</a></li>
-        <li><a href="pages/privacy.html">Privacy Policy</a></li>
-        <li class="nav-cta"><a href="#waitlist" class="btn-nav">Get Early Access</a></li>
+        <li><a href="pages/legal/terms.html">Terms of Use</a></li>
+        <li><a href="pages/legal/privacy.html">Privacy Policy</a></li>
+        <li class="nav-cta"><a href="products/resuvia/" class="btn-nav">Get Resuvia</a></li>
       </ul>
 
       <button class="hamburger" id="hamburger" aria-label="Toggle menu">
@@ -42,14 +43,15 @@
     <ul>
       <li><a href="#about" onclick="closeDrawer()">About</a></li>
       <li><a href="#products" onclick="closeDrawer()">Products</a></li>
+      <li><a href="products/resuvia/" onclick="closeDrawer()">Resuvia</a></li>
       <li><a href="#platform" onclick="closeDrawer()">Platform</a></li>
       <li><a href="#contact" onclick="closeDrawer()">Contact</a></li>
       <li class="drawer-divider"></li>
       <li><a href="pages/about.html" onclick="closeDrawer()">About Us</a></li>
-      <li><a href="pages/terms.html" onclick="closeDrawer()">Terms of Use</a></li>
-      <li><a href="pages/privacy.html" onclick="closeDrawer()">Privacy Policy</a></li>
+      <li><a href="pages/legal/terms.html" onclick="closeDrawer()">Terms of Use</a></li>
+      <li><a href="pages/legal/privacy.html" onclick="closeDrawer()">Privacy Policy</a></li>
       <li><a href="pages/contact.html" onclick="closeDrawer()">Contact Us</a></li>
-      <li><a href="#waitlist" class="btn-drawer" onclick="closeDrawer()">Get Early Access</a></li>
+      <li><a href="products/resuvia/" class="btn-drawer" onclick="closeDrawer()">Get Resuvia</a></li>
     </ul>
   </div>
   <div class="drawer-overlay" id="drawer-overlay" onclick="closeDrawer()"></div>
@@ -77,8 +79,8 @@
         right from your pocket.
       </p>
       <div class="hero-actions">
-        <a href="#waitlist" class="btn-primary">
-          <span>Join the Waitlist</span>
+        <a href="products/resuvia/" class="btn-primary">
+          <span>Get Resuvia</span>
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
         <a href="#products" class="btn-ghost">See our apps</a>
@@ -167,12 +169,42 @@
       <h2 class="section-title center">Productivity reimagined<br/><span class="gradient-text">for every workflow</span></h2>
       <p class="section-sub center">Each app tackles a specific productivity bottleneck with deep AI integration and a delightful native experience.</p>
 
-      <!-- products grid intentionally empty — apps hidden until launch -->
-      <div class="products-empty">
-        <div class="products-empty-icon">🚀</div>
-        <h3>Something exciting is coming</h3>
-        <p>Our first apps are in development. Join the waitlist to be the first to know when they launch.</p>
-        <a href="#waitlist" class="btn-primary">Join the Waitlist</a>
+      <div class="product-showcase">
+        <div class="product-card">
+          <div class="product-available-badge">
+            <span class="avail-dot"></span>
+            Available Now · iOS &amp; Android
+          </div>
+          <div class="product-header">
+            <div class="product-icon">📄</div>
+            <div>
+              <h3 class="product-name">Resuvia</h3>
+              <p class="product-tagline">AI Resume Analyzer &amp; Career Coach</p>
+            </div>
+          </div>
+          <p class="product-desc">
+            Upload your resume, paste or link a job description, and get an instant AI-powered compatibility score, targeted improvements, and tailored rewrites — right from your phone. Land more interviews with less guesswork.
+          </p>
+          <div class="product-features-mini">
+            <span>✦ ATS Score Analysis</span>
+            <span>✦ AI-Powered Rewrites</span>
+            <span>✦ Resume Templates</span>
+            <span>✦ Real Job Matches</span>
+            <span>✦ Career Roadmap</span>
+            <span>✦ Privacy-First</span>
+          </div>
+          <div class="product-platforms">
+            <span class="platform-label">Available on</span>
+            <span class="platform-badge">iOS</span>
+            <span class="platform-badge">Android</span>
+          </div>
+          <div class="product-actions">
+            <a href="products/resuvia/" class="btn-primary">
+              <span>Explore Resuvia</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -225,29 +257,6 @@
     </div>
   </section>
 
-  <!-- ===== WAITLIST ===== -->
-  <section class="waitlist section-pad" id="waitlist">
-    <div class="container">
-      <div class="waitlist-card">
-        <div class="wl-orb wl-orb-1"></div>
-        <div class="wl-orb wl-orb-2"></div>
-        <div class="wl-content">
-          <p class="section-eyebrow center" style="color:var(--lavender-light)">Early Access</p>
-          <h2 class="section-title center" style="color:#fff">Be the first to experience<br/><span class="gradient-text-light">the future of work</span></h2>
-          <p class="section-sub center" style="color:rgba(255,255,255,0.75)">Join thousands already on the waitlist. Get early access, founding member pricing, and a direct line to the team.</p>
-          <form class="wl-form" id="waitlist-form" onsubmit="handleWaitlist(event)">
-            <input type="email" placeholder="your@email.com" required class="wl-input" id="wl-email" />
-            <button type="submit" class="btn-primary wl-btn">
-              <span>Notify Me</span>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </button>
-          </form>
-          <p class="wl-note" id="wl-note">No spam, ever. Unsubscribe anytime.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- ===== FOOTER ===== -->
   <footer class="footer" id="contact">
     <div class="container">
@@ -265,14 +274,14 @@
             <li><a href="pages/about.html">About Us</a></li>
             <li><a href="#products">Our Apps</a></li>
             <li><a href="#platform">Platform</a></li>
-            <li><a href="#waitlist">Early Access</a></li>
+            <li><a href="products/resuvia/">Resuvia</a></li>
           </ul>
         </div>
         <div class="footer-links-group">
           <h4>Legal</h4>
           <ul>
-            <li><a href="pages/terms.html">Terms of Use</a></li>
-            <li><a href="pages/privacy.html">Privacy Policy</a></li>
+            <li><a href="pages/legal/terms.html">Terms of Use</a></li>
+            <li><a href="pages/legal/privacy.html">Privacy Policy</a></li>
           </ul>
         </div>
         <div class="footer-links-group">
