@@ -76,7 +76,7 @@
     <div class="container">
       <p class="section-eyebrow" id="hero-eyebrow">Resuvia — Legal</p>
       <h1 class="section-title"><span class="gradient-text" id="hero-title">Terms of Use</span></h1>
-      <p class="page-hero-sub" id="hero-date">Effective Date: June 6, 2026 &nbsp;·&nbsp; Last Updated: June 10, 2026</p>
+      <p class="page-hero-sub" id="hero-date">Effective Date: June 6, 2026 &nbsp;·&nbsp; Last Updated: June 12, 2026</p>
       <div class="lang-toggle-wrap" role="group" aria-label="Language selector">
         <button id="btn-en" class="lang-btn lang-active" onclick="setLang('en')" aria-pressed="true">EN</button>
         <span class="lang-sep" aria-hidden="true">|</span>
@@ -218,6 +218,7 @@
         <h2>12. Job Description URL Scraping</h2>
         <p>The App may retrieve job description text from URLs you provide using a multi-layer scraping approach. By submitting a job posting URL, you represent that your use of that URL complies with the terms of service of the website from which it originates. We are not responsible for the accuracy or completeness of job description content retrieved from third-party websites.</p>
         <p>URL scraping is subject to a daily quota: <strong>10 URL scrapes per day</strong> for Free tier users and <strong>50 URL scrapes per day</strong> for Pro subscribers. You can avoid URL scraping entirely by pasting the job description text directly into the App.</p>
+        <p>The Job Matches feature retrieves listings from third-party job search providers (<strong>Adzuna</strong> and <strong>Jooble</strong>) via our backend. These searches are subject to a separate daily quota: <strong>15 job searches per day</strong> for Free tier users and <strong>60 job searches per day</strong> for Pro subscribers. This quota applies per account, resets at midnight UTC, and is enforced server-side. Job listings are provided by third-party boards; we do not guarantee the accuracy, availability, or completeness of any listing, and we are not a party to any application process you initiate through them.</p>
 
         <h2>13. Intellectual Property</h2>
         <p>The App, including its design, code, graphics, branding, and all content we create or compile (excluding your User Content and third-party content), is owned by or licenced to XentarAI Inc. and is protected by Canadian and international intellectual property laws, including copyright, trademark, and trade secret law.</p>
@@ -422,6 +423,7 @@
         <h2>12. Extraction de descriptions de poste par URL</h2>
         <p>L'Application peut récupérer le texte des descriptions de poste à partir des URL que vous fournissez via une approche d'extraction à plusieurs niveaux. En soumettant l'URL d'une offre d'emploi, vous déclarez que votre utilisation de cette URL est conforme aux conditions d'utilisation du site web dont elle provient. Nous ne sommes pas responsables de l'exactitude ou de l'exhaustivité du contenu des descriptions de poste récupérées sur des sites tiers.</p>
         <p>L'extraction par URL est soumise à un quota quotidien : <strong>10 extractions par jour</strong> pour les utilisateurs du niveau gratuit et <strong>50 extractions par jour</strong> pour les abonnés Pro. Vous pouvez éviter entièrement l'extraction par URL en collant directement le texte de la description de poste dans l'Application.</p>
+        <p>La fonctionnalité Offres d'emploi récupère des annonces auprès de fournisseurs tiers de recherche d'emploi (<strong>Adzuna</strong> et <strong>Jooble</strong>) via notre infrastructure. Ces recherches sont soumises à un quota quotidien distinct : <strong>15 recherches par jour</strong> pour les utilisateurs du niveau gratuit et <strong>60 recherches par jour</strong> pour les abonnés Pro. Ce quota s'applique par compte, se réinitialise à minuit UTC et est appliqué côté serveur. Les annonces provenant de tableaux d'offres tiers sont fournies à titre informatif ; nous ne garantissons pas leur exactitude, disponibilité ni exhaustivité, et nous ne sommes pas partie à tout processus de candidature que vous initiez via ces tableaux.</p>
 
         <h2>13. Propriété intellectuelle</h2>
         <p>L'Application, notamment sa conception, son code, ses graphiques, son image de marque et tout le contenu que nous créons ou compilons (à l'exclusion de votre Contenu utilisateur et du contenu tiers), est détenu par XentarAI Inc. ou licencié à celle-ci, et est protégé par les lois canadiennes et internationales sur la propriété intellectuelle, notamment le droit d'auteur, les marques de commerce et le droit des secrets commerciaux.</p>
@@ -526,8 +528,8 @@
     const FR_EYEBROW = 'Resuvia — Légal';
     const EN_HERO    = 'Terms of Use';
     const FR_HERO    = 'Conditions d’utilisation';
-    const EN_DATE    = 'Effective Date: June 6, 2026  ·  Last Updated: June 10, 2026';
-    const FR_DATE    = 'Date d’entrée en vigueur : 6 juin 2026  ·  Dernière mise à jour : 10 juin 2026';
+    const EN_DATE    = 'Effective Date: June 6, 2026  ·  Last Updated: June 12, 2026';
+    const FR_DATE    = 'Date d’entrée en vigueur : 6 juin 2026  ·  Dernière mise à jour : 12 juin 2026';
 
     function setLang(lang) {
       const isFr = lang === 'fr';
