@@ -76,7 +76,7 @@
     <div class="container">
       <p class="section-eyebrow" id="hero-eyebrow">Resuvia — Legal</p>
       <h1 class="section-title"><span class="gradient-text" id="hero-title">Privacy Policy</span></h1>
-      <p class="page-hero-sub" id="hero-date">Effective Date: June 6, 2026 &nbsp;·&nbsp; Last Updated: June 12, 2026</p>
+      <p class="page-hero-sub" id="hero-date">Effective Date: June 6, 2026 &nbsp;·&nbsp; Last Updated: June 13, 2026</p>
       <div class="lang-toggle-wrap" role="group" aria-label="Language selector">
         <button id="btn-en" class="lang-btn lang-active" onclick="setLang('en')" aria-pressed="true">EN</button>
         <span class="lang-sep" aria-hidden="true">|</span>
@@ -121,7 +121,7 @@
         <p>Pro subscriptions are purchased through the <strong>Apple App Store</strong> (iOS) or <strong>Google Play Store</strong> (Android). All billing and payment processing is handled entirely by Apple or Google. We do not collect, process, or store credit or debit card numbers or billing addresses. We receive only a non-reversible transaction receipt and a randomly generated account token from the platform to verify your subscription status.</p>
 
         <h3>2.8 Advertising Data (Free Tier Only)</h3>
-        <p>The free tier of the App displays interstitial advertisements served by <strong>Google AdMob</strong>. Google AdMob may collect your device's advertising identifier (IDFA on iOS, GAID on Android) and use it to serve personalised ads. On iOS, this collection requires your explicit consent under Apple's App Tracking Transparency (ATT) framework, and we will prompt for this before any identifier is shared. This collection constitutes sharing of personal information for cross-context behavioural advertising purposes, which may be treated as a "sale" or "sharing" under the California Consumer Privacy Act (see Section 11) and analogous state laws. Pro subscribers do not see ads and are not subject to this data collection.</p>
+        <p>The free tier of the App displays advertisements served by <strong>Google AdMob</strong>, including interstitial ads and optional rewarded video ads (which, when watched, grant a temporary Pro feature session). Google AdMob may collect your device's advertising identifier (IDFA on iOS, GAID on Android) and use it to serve personalised ads. On iOS, this collection requires your explicit consent under Apple's App Tracking Transparency (ATT) framework, and we will prompt for this before any identifier is shared. This collection constitutes sharing of personal information for cross-context behavioural advertising purposes, which may be treated as a "sale" or "sharing" under the California Consumer Privacy Act (see Section 11) and analogous state laws. Pro subscribers do not see ads and are not subject to this data collection.</p>
         <p><strong>Notice for Quebec residents (Law 25, s. 8.1):</strong> The App uses profiling technology (Google AdMob, free tier only) that may identify or profile you for advertising purposes. You have the right to be informed of this and to opt out at any time. To opt out: deny ATT consent on iOS, or reset your advertising ID on Android (<em>Settings → Privacy → Ads</em>). Upgrading to Pro also removes all advertising and profiling entirely.</p>
 
         <h3>2.9 Biometric Authentication</h3>
@@ -182,7 +182,7 @@
         <p>When you provide a job posting URL, the App may transmit that URL to one or more of the following third-party services to retrieve the job description text: <strong>Jina AI Reader</strong>, <strong>Wayback Machine / archive.today</strong> (Internet Archive), <strong>ScrapingAnt</strong>, <strong>Apify</strong>, or <strong>Firecrawl</strong>. Only the URL is shared; your personal information and résumé content are not transmitted to these services. You can paste the job description text directly to avoid URL scraping entirely.</p>
 
         <h3>5.4 Email Delivery</h3>
-        <p><strong>Resend</strong> (primary, USA) and <strong>Brevo</strong> (fallback, France) deliver OTP authentication codes and account-related emails to your email address.</p>
+        <p><strong>Resend</strong> (USA), <strong>Brevo</strong> (France), and <strong>ZeptoMail</strong> (Zoho Corporation, India) deliver OTP authentication codes and account-related emails to your email address. These providers are used on a rotating basis; only your email address and the message content are shared with them.</p>
 
         <h3>5.5 Analytics</h3>
         <p><strong>PostHog</strong> (PostHog Inc., USA) — product analytics, consent-gated as described in Section 2.5.</p>
@@ -200,12 +200,15 @@
         <p>We may disclose personal information if required by law, court order, or governmental authority. In the event of a merger, acquisition, or asset sale, your information may be transferred to the successor entity subject to the same protections described here, and we will provide notice before any such transfer.</p>
 
         <h3>5.10 Job Search Providers</h3>
-        <p>The Job Matches feature is powered in part by server-side job search APIs. When you view Job Matches, a pseudonymised search query (job role and key skills derived from your analysis results) and your location preference (country code and optional city or region text) are transmitted to the following providers via our backend:</p>
+        <p>The Job Matches feature is powered by multiple job search providers. When you view Job Matches, a pseudonymised search query (job role and key skills derived from your analysis results) and your location preference (country code and optional city or region text) are shared with the following providers:</p>
         <ul>
-          <li><strong>Adzuna</strong> (Adzuna Ltd, United Kingdom) — primary job search provider; delivers location-aware, active job listings</li>
-          <li><strong>Jooble</strong> (global operations) — fallback job search provider; supplements results when Adzuna listings are insufficient</li>
+          <li><strong>Adzuna</strong> (Adzuna Ltd, United Kingdom) — primary job search provider, queried via our backend; delivers location-aware, active job listings</li>
+          <li><strong>Jooble</strong> (global operations) — fallback job search provider, queried via our backend; supplements results when Adzuna listings are insufficient</li>
+          <li><strong>The Muse</strong> (USA) — queried directly from your device</li>
+          <li><strong>Arbeitnow</strong> (Germany) — queried directly from your device</li>
+          <li><strong>Remotive</strong> (global operations) — queried directly from your device; remote-job listings</li>
         </ul>
-        <p>These providers receive only the search query and location preference. Your résumé content, name, email address, and other account information are not shared with them. API keys for these services are stored in our backend vault and are never embedded in the App binary.</p>
+        <p>Providers queried directly from your device also receive your device's IP address as an inherent part of the network request. None of these providers receive your résumé content, name, email address, or other account information. API keys for the backend-routed providers (Adzuna, Jooble) are stored in our backend vault and are never embedded in the App binary.</p>
 
         <h2>6. Data Security</h2>
         <p>We implement the following technical and organisational measures:</p>
@@ -392,7 +395,7 @@
         <p>Users in the EU, EEA, UK, Switzerland, Brazil, and Canada are presented with an explicit consent prompt during onboarding. No analytics data is collected before consent is granted. All other users may opt out at any time via the same in-app setting.</p>
 
         <h2>22. International Data Transfers</h2>
-        <p>XentarAI Inc. is incorporated in Canada. Your personal information may be transferred to and processed in the <strong>United States</strong> (Supabase, Anthropic, Google, PostHog, Sentry, ScrapingAnt, Apify, Firecrawl, Resend, AdMob, Jooble), <strong>United Kingdom</strong> (Adzuna), and <strong>France</strong> (Mistral AI, Brevo), and potentially other countries where our service providers operate.</p>
+        <p>XentarAI Inc. is incorporated in Canada. Your personal information may be transferred to and processed in the <strong>United States</strong> (Supabase, Anthropic, Google, PostHog, Sentry, ScrapingAnt, Apify, Firecrawl, Resend, AdMob, Jooble, The Muse), the <strong>United Kingdom</strong> (Adzuna), <strong>France</strong> (Mistral AI, Brevo), <strong>Germany</strong> (Arbeitnow), <strong>India</strong> (ZeptoMail), and potentially other countries where our service providers operate (including Remotive, which operates globally).</p>
         <p>Safeguards governing these transfers:</p>
         <ul>
           <li><strong>From EU/EEA</strong> — Standard Contractual Clauses (EU SCCs, 2021)</li>
@@ -459,7 +462,7 @@
         <p>Les abonnements Pro sont achetés via l'<strong>App Store d'Apple</strong> (iOS) ou le <strong>Google Play Store</strong> (Android). Toute la facturation et le traitement des paiements sont gérés entièrement par Apple ou Google. Nous ne collectons, ne traitons ni ne conservons de numéros de carte de crédit ou de débit, ni d'adresses de facturation. Nous ne recevons qu'un reçu de transaction non réversible et un jeton de compte généré aléatoirement par la plateforme pour vérifier votre statut d'abonnement.</p>
 
         <h3>2.8 Données publicitaires (niveau gratuit uniquement)</h3>
-        <p>Le niveau gratuit de l'Application affiche des publicités interstitielles servies par <strong>Google AdMob</strong>. Google AdMob peut collecter l'identifiant publicitaire de votre appareil (IDFA sur iOS, GAID sur Android) et l'utiliser pour diffuser des publicités personnalisées. Sur iOS, cette collecte nécessite votre consentement explicite dans le cadre du dispositif App Tracking Transparency (ATT) d'Apple ; nous vous demanderons ce consentement avant tout partage d'identifiant. Cette collecte constitue un partage de renseignements personnels à des fins de publicité comportementale, ce qui peut être considéré comme une « vente » ou un « partage » au sens de la loi californienne CCPA (voir section 11) et des lois analogues. Les abonnés Pro ne voient pas de publicités et ne sont pas soumis à cette collecte de données.</p>
+        <p>Le niveau gratuit de l'Application affiche des publicités servies par <strong>Google AdMob</strong>, notamment des publicités interstitielles et des publicités vidéo avec récompense facultatives (qui, lorsqu'elles sont visionnées, accordent une session de fonctionnalités Pro temporaire). Google AdMob peut collecter l'identifiant publicitaire de votre appareil (IDFA sur iOS, GAID sur Android) et l'utiliser pour diffuser des publicités personnalisées. Sur iOS, cette collecte nécessite votre consentement explicite dans le cadre du dispositif App Tracking Transparency (ATT) d'Apple ; nous vous demanderons ce consentement avant tout partage d'identifiant. Cette collecte constitue un partage de renseignements personnels à des fins de publicité comportementale, ce qui peut être considéré comme une « vente » ou un « partage » au sens de la loi californienne CCPA (voir section 11) et des lois analogues. Les abonnés Pro ne voient pas de publicités et ne sont pas soumis à cette collecte de données.</p>
         <p><strong>Avis pour les résidents du Québec (Loi 25, art. 8.1) :</strong> L'Application utilise des technologies de profilage (Google AdMob, niveau gratuit uniquement) susceptibles d'identifier ou de profiler une personne à des fins publicitaires. Conformément à la Loi sur la protection des renseignements personnels dans le secteur privé (Loi 25), nous vous en informons et vous pouvez vous y opposer à tout moment : refusez le consentement ATT sur iOS, ou réinitialisez votre identifiant publicitaire sur Android (<em>Paramètres → Confidentialité → Publicités</em>). La souscription à un abonnement Pro supprime toute publicité et tout profilage.</p>
 
         <h3>2.9 Authentification biométrique</h3>
@@ -520,7 +523,7 @@
         <p>Lorsque vous fournissez une URL d'offre d'emploi, l'Application peut transmettre cette URL à un ou plusieurs des services tiers suivants pour récupérer le texte de la description de poste : <strong>Jina AI Reader</strong>, <strong>Wayback Machine / archive.today</strong> (Internet Archive), <strong>ScrapingAnt</strong>, <strong>Apify</strong> ou <strong>Firecrawl</strong>. Seule l'URL est partagée ; vos renseignements personnels et le contenu de votre CV ne sont pas transmis à ces services. Vous pouvez coller directement le texte de la description de poste pour éviter l'extraction d'URL.</p>
 
         <h3>5.4 Envoi de courriels</h3>
-        <p><strong>Resend</strong> (principal, États-Unis) et <strong>Brevo</strong> (repli, France) transmettent les codes OTP d'authentification et les courriels liés au compte à votre adresse courriel.</p>
+        <p><strong>Resend</strong> (États-Unis), <strong>Brevo</strong> (France) et <strong>ZeptoMail</strong> (Zoho Corporation, Inde) transmettent les codes OTP d'authentification et les courriels liés au compte à votre adresse courriel. Ces fournisseurs sont utilisés en alternance ; seuls votre adresse courriel et le contenu du message leur sont communiqués.</p>
 
         <h3>5.5 Analyse</h3>
         <p><strong>PostHog</strong> (PostHog Inc., États-Unis) — analyse de produit, soumise au consentement comme décrit à la section 2.5.</p>
@@ -538,12 +541,15 @@
         <p>Nous pouvons divulguer des renseignements personnels si la loi, une ordonnance d'un tribunal ou une autorité gouvernementale l'exige. En cas de fusion, d'acquisition ou de vente d'actifs, vos renseignements peuvent être transférés à l'entité successeure sous réserve des mêmes protections, et nous vous en informerons avant tout transfert.</p>
 
         <h3>5.10 Fournisseurs de recherche d'emploi</h3>
-        <p>La fonctionnalité Offres d'emploi est alimentée en partie par des API de recherche d'emploi côté serveur. Lorsque vous consultez les Offres d'emploi, une requête pseudonymisée (poste et compétences clés dérivés de vos résultats d'analyse) et votre préférence de localisation (code pays et ville ou région facultatifs) sont transmis aux fournisseurs suivants via notre infrastructure :</p>
+        <p>La fonctionnalité Offres d'emploi est alimentée par plusieurs fournisseurs de recherche d'emploi. Lorsque vous consultez les Offres d'emploi, une requête pseudonymisée (poste et compétences clés dérivés de vos résultats d'analyse) et votre préférence de localisation (code pays et ville ou région facultatifs) sont communiqués aux fournisseurs suivants :</p>
         <ul>
-          <li><strong>Adzuna</strong> (Adzuna Ltd, Royaume-Uni) — fournisseur principal de recherche d'emploi ; fournit des annonces actives géolocalisées</li>
-          <li><strong>Jooble</strong> (opérations mondiales) — fournisseur de secours ; complète les résultats lorsque les annonces Adzuna sont insuffisantes</li>
+          <li><strong>Adzuna</strong> (Adzuna Ltd, Royaume-Uni) — fournisseur principal, interrogé via notre infrastructure ; fournit des annonces actives géolocalisées</li>
+          <li><strong>Jooble</strong> (opérations mondiales) — fournisseur de secours, interrogé via notre infrastructure ; complète les résultats lorsque les annonces Adzuna sont insuffisantes</li>
+          <li><strong>The Muse</strong> (États-Unis) — interrogé directement depuis votre appareil</li>
+          <li><strong>Arbeitnow</strong> (Allemagne) — interrogé directement depuis votre appareil</li>
+          <li><strong>Remotive</strong> (opérations mondiales) — interrogé directement depuis votre appareil ; annonces de télétravail</li>
         </ul>
-        <p>Ces fournisseurs ne reçoivent que la requête de recherche et la préférence de localisation. Le contenu de votre CV, votre nom, votre adresse courriel et autres renseignements de compte ne leur sont pas communiqués. Les clés API pour ces services sont stockées dans notre coffre-fort et ne sont jamais intégrées dans le binaire de l'Application.</p>
+        <p>Les fournisseurs interrogés directement depuis votre appareil reçoivent également l'adresse IP de votre appareil, inhérente à la requête réseau. Aucun de ces fournisseurs ne reçoit le contenu de votre CV, votre nom, votre adresse courriel ni autres renseignements de compte. Les clés API des fournisseurs acheminés via notre infrastructure (Adzuna, Jooble) sont stockées dans notre coffre-fort et ne sont jamais intégrées dans le binaire de l'Application.</p>
 
         <h2>6. Sécurité des données</h2>
         <p>Nous mettons en œuvre les mesures techniques et organisationnelles suivantes :</p>
@@ -730,7 +736,7 @@
         <p>Les utilisateurs de l'UE, de l'EEE, du Royaume-Uni, de la Suisse, du Brésil et du Canada se voient présenter une invite de consentement explicite lors de l'intégration. Aucune donnée d'analyse n'est collectée avant l'octroi du consentement. Tous les autres utilisateurs peuvent se désabonner à tout moment via le même paramètre.</p>
 
         <h2>22. Transferts internationaux de données</h2>
-        <p>XentarAI Inc. est constituée en personne morale au Canada. Vos renseignements personnels peuvent être transférés et traités aux <strong>États-Unis</strong> (Supabase, Anthropic, Google, PostHog, Sentry, ScrapingAnt, Apify, Firecrawl, Resend, AdMob, Jooble), au <strong>Royaume-Uni</strong> (Adzuna) et en <strong>France</strong> (Mistral AI, Brevo), ainsi que potentiellement dans d'autres pays où nos fournisseurs opèrent.</p>
+        <p>XentarAI Inc. est constituée en personne morale au Canada. Vos renseignements personnels peuvent être transférés et traités aux <strong>États-Unis</strong> (Supabase, Anthropic, Google, PostHog, Sentry, ScrapingAnt, Apify, Firecrawl, Resend, AdMob, Jooble, The Muse), au <strong>Royaume-Uni</strong> (Adzuna), en <strong>France</strong> (Mistral AI, Brevo), en <strong>Allemagne</strong> (Arbeitnow), en <strong>Inde</strong> (ZeptoMail), ainsi que potentiellement dans d'autres pays où nos fournisseurs opèrent (y compris Remotive, qui opère à l'échelle mondiale).</p>
         <p>Garanties régissant ces transferts :</p>
         <ul>
           <li><strong>Depuis l'UE/EEE</strong> — Clauses contractuelles types (CCT UE, 2021)</li>
@@ -794,8 +800,8 @@
     const FR_EYEBROW = 'Resuvia — Légal';
     const EN_HERO   = 'Privacy Policy';
     const FR_HERO   = 'Politique de confidentialité';
-    const EN_DATE   = 'Effective Date: June 6, 2026  ·  Last Updated: June 12, 2026';
-    const FR_DATE   = 'Date d’entrée en vigueur : 6 juin 2026  ·  Dernière mise à jour : 12 juin 2026';
+    const EN_DATE   = 'Effective Date: June 6, 2026  ·  Last Updated: June 13, 2026';
+    const FR_DATE   = 'Date d’entrée en vigueur : 6 juin 2026  ·  Dernière mise à jour : 13 juin 2026';
 
     function setLang(lang) {
       const isFr = lang === 'fr';

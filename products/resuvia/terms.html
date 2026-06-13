@@ -76,7 +76,7 @@
     <div class="container">
       <p class="section-eyebrow" id="hero-eyebrow">Resuvia — Legal</p>
       <h1 class="section-title"><span class="gradient-text" id="hero-title">Terms of Use</span></h1>
-      <p class="page-hero-sub" id="hero-date">Effective Date: June 6, 2026 &nbsp;·&nbsp; Last Updated: June 12, 2026</p>
+      <p class="page-hero-sub" id="hero-date">Effective Date: June 6, 2026 &nbsp;·&nbsp; Last Updated: June 13, 2026</p>
       <div class="lang-toggle-wrap" role="group" aria-label="Language selector">
         <button id="btn-en" class="lang-btn lang-active" onclick="setLang('en')" aria-pressed="true">EN</button>
         <span class="lang-sep" aria-hidden="true">|</span>
@@ -154,6 +154,7 @@
           <li>Access to <strong>6 résumé templates</strong></li>
           <li>Job Matches (real job board listings with links)</li>
           <li>Interstitial advertisements (skippable after the first day of use)</li>
+          <li>Optional rewarded video advertisements that grant a temporary Pro feature session when watched (limited to 3 per day)</li>
         </ul>
 
         <h3>7.2 Pro Subscription</h3>
@@ -174,6 +175,7 @@
         <h2>8. In-App Purchases and Billing</h2>
         <p>Pro subscriptions are purchased exclusively through the <strong>Apple App Store</strong> (iOS) or <strong>Google Play Store</strong> (Android). All payment processing, billing, refunds, and subscription management are handled by Apple or Google pursuant to their respective terms of service and policies. We do not process or store payment card information.</p>
         <p>By initiating a purchase, you agree to Apple's or Google's applicable purchase terms, as presented to you at the time of purchase. Subscription pricing, trial periods, and renewal terms are set out in the App Store or Play Store listing at the time of purchase.</p>
+        <p><strong>Consumable purchases:</strong> In addition to the Pro subscription, the App offers one-time consumable purchases that add to your Free-tier quotas: a <strong>resume downloads pack</strong> (+5 downloads), an <strong>analyses pack</strong> (+3 analyses), and a <strong>cover letter downloads pack</strong> (+10 downloads). These are processed exclusively through the App Store or Play Store. Consumable purchases are non-refundable once the added quota has been credited to your account, except where a refund is required by applicable law or granted by Apple or Google.</p>
         <p><strong>Refunds:</strong> All refund requests for in-app purchases must be directed to Apple or Google. We do not have the ability to issue refunds directly. Please contact Apple Support (reportaproblem.apple.com) or Google Play Support for refund assistance.</p>
         <p><strong>Cancellation:</strong> You may cancel your Pro subscription at any time through your Apple ID or Google account subscription settings. Cancellation takes effect at the end of the current billing period; you retain Pro access until then.</p>
         <p><strong>Subscription verification:</strong> We verify your subscription status by validating a receipt token provided by Apple or Google. Your Apple ID or Google account is linked to your Resuvia account for this purpose. We do not receive your billing details.</p>
@@ -359,6 +361,7 @@
           <li>Accès à <strong>6 modèles de CV</strong></li>
           <li>Offres d'emploi correspondantes (annonces réelles avec liens)</li>
           <li>Publicités interstitielles (sautables après le premier jour d'utilisation)</li>
+          <li>Publicités vidéo avec récompense facultatives qui accordent une session de fonctionnalités Pro temporaire lorsqu'elles sont visionnées (limitées à 3 par jour)</li>
         </ul>
 
         <h3>7.2 Abonnement Pro</h3>
@@ -379,6 +382,7 @@
         <h2>8. Achats intégrés et facturation</h2>
         <p>Les abonnements Pro sont achetés exclusivement via l'<strong>App Store d'Apple</strong> (iOS) ou le <strong>Google Play Store</strong> (Android). Tout traitement des paiements, facturation, remboursements et gestion des abonnements est géré par Apple ou Google conformément à leurs conditions de service respectives. Nous ne traitons ni ne stockons aucune information de carte de paiement.</p>
         <p>En initiant un achat, vous acceptez les conditions d'achat applicables d'Apple ou de Google, telles que présentées lors de l'achat. Les tarifs d'abonnement, les périodes d'essai et les conditions de renouvellement sont indiqués dans la fiche App Store ou Play Store au moment de l'achat.</p>
+        <p><strong>Achats consommables :</strong> En plus de l'abonnement Pro, l'Application propose des achats consommables à usage unique qui s'ajoutent à vos quotas du niveau gratuit : un <strong>lot de téléchargements de CV</strong> (+5 téléchargements), un <strong>lot d'analyses</strong> (+3 analyses) et un <strong>lot de téléchargements de lettres de présentation</strong> (+10 téléchargements). Ils sont traités exclusivement via l'App Store ou le Play Store. Les achats consommables ne sont pas remboursables une fois le quota crédité à votre compte, sauf lorsqu'un remboursement est requis par la loi applicable ou accordé par Apple ou Google.</p>
         <p><strong>Remboursements :</strong> Toute demande de remboursement d'achats intégrés doit être adressée à Apple ou Google. Nous n'avons pas la capacité d'effectuer des remboursements directement. Veuillez contacter le support Apple (reportaproblem.apple.com) ou le support Google Play.</p>
         <p><strong>Annulation :</strong> Vous pouvez annuler votre abonnement Pro à tout moment dans les paramètres d'abonnement de votre identifiant Apple ou compte Google. L'annulation prend effet à la fin de la période de facturation en cours ; vous conservez l'accès Pro jusqu'à cette date.</p>
         <p><strong>Vérification de l'abonnement :</strong> Nous vérifions votre statut d'abonnement en validant un jeton de reçu fourni par Apple ou Google. Votre identifiant Apple ou compte Google est lié à votre compte Resuvia à cet effet. Nous ne recevons pas vos coordonnées de facturation.</p>
@@ -528,8 +532,8 @@
     const FR_EYEBROW = 'Resuvia — Légal';
     const EN_HERO    = 'Terms of Use';
     const FR_HERO    = 'Conditions d’utilisation';
-    const EN_DATE    = 'Effective Date: June 6, 2026  ·  Last Updated: June 12, 2026';
-    const FR_DATE    = 'Date d’entrée en vigueur : 6 juin 2026  ·  Dernière mise à jour : 12 juin 2026';
+    const EN_DATE    = 'Effective Date: June 6, 2026  ·  Last Updated: June 13, 2026';
+    const FR_DATE    = 'Date d’entrée en vigueur : 6 juin 2026  ·  Dernière mise à jour : 13 juin 2026';
 
     function setLang(lang) {
       const isFr = lang === 'fr';
