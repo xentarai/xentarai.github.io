@@ -76,7 +76,7 @@
     <div class="container">
       <p class="section-eyebrow" id="hero-eyebrow">Resuvia — Legal</p>
       <h1 class="section-title"><span class="gradient-text" id="hero-title">Privacy Policy</span></h1>
-      <p class="page-hero-sub" id="hero-date">Effective Date: June 6, 2026 &nbsp;·&nbsp; Last Updated: June 13, 2026</p>
+      <p class="page-hero-sub" id="hero-date">Effective Date: June 6, 2026 &nbsp;·&nbsp; Last Updated: June 15, 2026</p>
       <div class="lang-toggle-wrap" role="group" aria-label="Language selector">
         <button id="btn-en" class="lang-btn lang-active" onclick="setLang('en')" aria-pressed="true">EN</button>
         <span class="lang-sep" aria-hidden="true">|</span>
@@ -100,7 +100,7 @@
         <h2>2. Information We Collect</h2>
 
         <h3>2.1 Account Information</h3>
-        <p>When you create an account we collect your <strong>first name, last name, email address</strong>, and a <strong>display name</strong>. Authentication is performed via one-time passcode (OTP) sent to your email; we do not store passwords. You may also use the App as an anonymous Guest without providing any personal information.</p>
+        <p>When you create an account we collect your <strong>first name, last name, email address</strong>, and a <strong>display name</strong>. You can sign up and sign in either with a <strong>password you choose</strong> or with <strong>Google Sign-In</strong>. We never store your password in readable form — our authentication provider (Supabase Auth) keeps only a salted, hashed version — and we never receive your Google account password. We also use <strong>one-time passcodes (OTPs)</strong> sent to your email to verify your email address, reset a forgotten password, and confirm account deletion. If you sign in with Google, we receive your name, email address, and Google account identifier from Google to create your account (see Section 5.11). You may also use the App as an anonymous Guest without providing any personal information.</p>
 
         <h3>2.2 Résumé File Name</h3>
         <p>We store the <strong>file name</strong> of your uploaded résumé on our servers (e.g., "my_resume.pdf") solely to display it back to you. The actual PDF content is <strong>never uploaded to our servers</strong>. PDF parsing and text extraction happen entirely on your device.</p>
@@ -121,7 +121,7 @@
         <p>Pro subscriptions are purchased through the <strong>Apple App Store</strong> (iOS) or <strong>Google Play Store</strong> (Android). All billing and payment processing is handled entirely by Apple or Google. We do not collect, process, or store credit or debit card numbers or billing addresses. We receive only a non-reversible transaction receipt and a randomly generated account token from the platform to verify your subscription status.</p>
 
         <h3>2.8 Advertising Data (Free Tier Only)</h3>
-        <p>The free tier of the App displays advertisements served by <strong>Google AdMob</strong>, including interstitial ads and optional rewarded video ads (which, when watched, grant a temporary Pro feature session). Google AdMob may collect your device's advertising identifier (IDFA on iOS, GAID on Android) and use it to serve personalised ads. On iOS, this collection requires your explicit consent under Apple's App Tracking Transparency (ATT) framework, and we will prompt for this before any identifier is shared. This collection constitutes sharing of personal information for cross-context behavioural advertising purposes, which may be treated as a "sale" or "sharing" under the California Consumer Privacy Act (see Section 11) and analogous state laws. Pro subscribers do not see ads and are not subject to this data collection.</p>
+        <p>The free tier of the App displays advertisements served by <strong>Google AdMob</strong>, including interstitial ads and optional rewarded video ads (which, when watched, grant a temporary Pro feature session). Google AdMob may collect your device's advertising identifier (IDFA on iOS, GAID on Android) and use it to serve personalised ads. On iOS, this collection requires your explicit consent under Apple's App Tracking Transparency (ATT) framework, and we will prompt for this before any identifier is shared. In the EEA, UK, and Switzerland, we display a Google-certified consent message (via Google's User Messaging Platform) before serving personalised ads; if you decline, only non-personalised ads are shown. This collection constitutes sharing of personal information for cross-context behavioural advertising purposes, which may be treated as a "sale" or "sharing" under the California Consumer Privacy Act (see Section 11) and analogous state laws. Pro subscribers do not see ads and are not subject to this data collection.</p>
         <p><strong>Notice for Quebec residents (Law 25, s. 8.1):</strong> The App uses profiling technology (Google AdMob, free tier only) that may identify or profile you for advertising purposes. You have the right to be informed of this and to opt out at any time. To opt out: deny ATT consent on iOS, or reset your advertising ID on Android (<em>Settings → Privacy → Ads</em>). Upgrading to Pro also removes all advertising and profiling entirely.</p>
 
         <h3>2.9 Biometric Authentication</h3>
@@ -135,6 +135,7 @@
         <ul>
           <li><strong>Job search query</strong> — derived from your analysis results (target role and key skill gaps). This is a short text string such as "Software Engineer Python" and does not include your résumé content, name, or email address.</li>
           <li><strong>Location preference</strong> — a city or region you optionally enter (e.g., "New York" or "London"), together with your device's country code inferred from your locale setting. This is stored locally on your device and sent to our backend to filter job search results geographically. You can update or clear your location preference at any time via the Location filter in Job Matches.</li>
+          <li><strong>Approximate device location (optional)</strong> — to help pre-fill your job search location, the App may ask your permission to access your device's <strong>approximate (coarse) location</strong> through your operating system's location services. If you grant permission, your device's location is used <strong>only on your device</strong> and is immediately converted by the operating system into a city name and country code; the underlying GPS coordinates are <strong>never stored or transmitted to our servers</strong>. Only the resulting city and country code are used (and may be sent to our backend to filter job listings), exactly as if you had typed them yourself. Granting location access is entirely optional — if you deny it, the App falls back to your résumé-derived location or your device's locale country code. You can grant or revoke this permission at any time in your device settings.</li>
           <li><strong>Job search usage count</strong> — a per-user daily counter linked to your account ID is maintained server-side to enforce daily quota limits. This record contains only your account ID, the date, and the request count — not the content of your searches.</li>
         </ul>
 
@@ -149,14 +150,14 @@
           <li>To understand feature usage and improve the App (with consent, where required)</li>
           <li>To serve advertisements on the free tier (iOS: only with ATT consent)</li>
           <li>To comply with legal obligations and enforce our Terms of Use</li>
-          <li>To retrieve location-relevant job listings via third-party job search providers using your pseudonymised search query and location preference</li>
+          <li>To retrieve location-relevant job listings via third-party job search providers using your pseudonymised search query and location preference (which may, with your permission, be pre-filled from your device's approximate location)</li>
           <li>To detect and prevent fraud, abuse, and security threats</li>
         </ul>
 
         <h2>4. Legal Bases for Processing (GDPR / UK GDPR)</h2>
         <p>For users in the EU, EEA, UK, and Switzerland, we rely on the following legal bases:</p>
         <ul>
-          <li><strong>Contract performance</strong> — account creation, authentication, résumé analysis, subscription management</li>
+          <li><strong>Contract performance</strong> — account creation, authentication (password or Google Sign-In), résumé analysis, subscription management</li>
           <li><strong>Consent</strong> — analytics (PostHog), crash reporting (Sentry), and personalised advertising (AdMob / ATT). You may withdraw consent at any time in <em>Settings → Account Preferences → Privacy &amp; Consent</em>.</li>
           <li><strong>Legitimate interests</strong> — fraud prevention, abuse detection, improving service reliability. We have assessed that these interests are not overridden by your fundamental rights and freedoms.</li>
           <li><strong>Legal obligation</strong> — disclosures or processing required by applicable law</li>
@@ -210,12 +211,15 @@
         </ul>
         <p>Providers queried directly from your device also receive your device's IP address as an inherent part of the network request. None of these providers receive your résumé content, name, email address, or other account information. API keys for the backend-routed providers (Adzuna, Jooble) are stored in our backend vault and are never embedded in the App binary.</p>
 
+        <h3>5.11 Authentication Provider</h3>
+        <p><strong>Google</strong> (Google LLC, USA) — if you choose <strong>Google Sign-In</strong>, Google authenticates you and provides us with your name, email address, and Google account identifier to create or access your account. Google's handling of your data in connection with sign-in is governed by Google's own privacy policy. You can use email-and-password sign-in instead if you prefer not to use Google Sign-In. Our authentication and database provider, <strong>Supabase</strong> (Section 5.1), stores your account credentials only as a salted hash.</p>
+
         <h2>6. Data Security</h2>
         <p>We implement the following technical and organisational measures:</p>
         <ul>
           <li>All data in transit is encrypted using TLS 1.2 or higher</li>
           <li>Locally cached résumé files are encrypted at rest using AES-256-GCM with a per-user 256-bit key stored in the device's secure element (iOS Keychain / Android Keystore) with first-unlock-only access</li>
-          <li>Authentication uses one-time passcodes (OTP); no passwords are stored</li>
+          <li>Account passwords are never stored in readable form — only a salted hash is held by our authentication provider; one-time passcodes (OTP) are required for email verification, password reset, and account deletion</li>
           <li>API keys for AI services are stored in our backend vault and are never embedded in the App binary</li>
           <li>Row-Level Security restricts all database access to the authenticated user's own data</li>
           <li>Account deletion requires OTP verification and is rate-limited</li>
@@ -441,7 +445,7 @@
         <h2>2. Renseignements que nous collectons</h2>
 
         <h3>2.1 Informations de compte</h3>
-        <p>Lors de la création d'un compte, nous collectons votre <strong>prénom, nom de famille, adresse courriel</strong> et un <strong>nom d'affichage</strong>. L'authentification est effectuée par un code d'accès à usage unique (OTP) envoyé à votre adresse courriel ; nous ne conservons pas de mots de passe. Vous pouvez également utiliser l'Application en tant qu'invité anonyme sans fournir de renseignements personnels.</p>
+        <p>Lors de la création d'un compte, nous collectons votre <strong>prénom, nom de famille, adresse courriel</strong> et un <strong>nom d'affichage</strong>. Vous pouvez créer un compte et vous connecter soit avec un <strong>mot de passe de votre choix</strong>, soit avec <strong>Google Sign-In</strong>. Nous ne stockons jamais votre mot de passe en clair — notre fournisseur d'authentification (Supabase Auth) n'en conserve qu'une version hachée et salée — et nous ne recevons jamais le mot de passe de votre compte Google. Nous utilisons également des <strong>codes d'accès à usage unique (OTP)</strong> envoyés à votre adresse courriel pour vérifier votre adresse courriel, réinitialiser un mot de passe oublié et confirmer la suppression du compte. Si vous vous connectez avec Google, nous recevons de Google votre nom, votre adresse courriel et votre identifiant de compte Google pour créer votre compte (voir section 5.11). Vous pouvez également utiliser l'Application en tant qu'invité anonyme sans fournir de renseignements personnels.</p>
 
         <h3>2.2 Nom du fichier CV</h3>
         <p>Nous conservons sur nos serveurs le <strong>nom du fichier</strong> de votre CV téléversé (p. ex., « mon_cv.pdf ») uniquement pour vous l'afficher. Le contenu réel du fichier PDF <strong>n'est jamais téléversé sur nos serveurs</strong>. L'analyse et l'extraction du texte du PDF s'effectuent entièrement sur votre appareil.</p>
@@ -462,7 +466,7 @@
         <p>Les abonnements Pro sont achetés via l'<strong>App Store d'Apple</strong> (iOS) ou le <strong>Google Play Store</strong> (Android). Toute la facturation et le traitement des paiements sont gérés entièrement par Apple ou Google. Nous ne collectons, ne traitons ni ne conservons de numéros de carte de crédit ou de débit, ni d'adresses de facturation. Nous ne recevons qu'un reçu de transaction non réversible et un jeton de compte généré aléatoirement par la plateforme pour vérifier votre statut d'abonnement.</p>
 
         <h3>2.8 Données publicitaires (niveau gratuit uniquement)</h3>
-        <p>Le niveau gratuit de l'Application affiche des publicités servies par <strong>Google AdMob</strong>, notamment des publicités interstitielles et des publicités vidéo avec récompense facultatives (qui, lorsqu'elles sont visionnées, accordent une session de fonctionnalités Pro temporaire). Google AdMob peut collecter l'identifiant publicitaire de votre appareil (IDFA sur iOS, GAID sur Android) et l'utiliser pour diffuser des publicités personnalisées. Sur iOS, cette collecte nécessite votre consentement explicite dans le cadre du dispositif App Tracking Transparency (ATT) d'Apple ; nous vous demanderons ce consentement avant tout partage d'identifiant. Cette collecte constitue un partage de renseignements personnels à des fins de publicité comportementale, ce qui peut être considéré comme une « vente » ou un « partage » au sens de la loi californienne CCPA (voir section 11) et des lois analogues. Les abonnés Pro ne voient pas de publicités et ne sont pas soumis à cette collecte de données.</p>
+        <p>Le niveau gratuit de l'Application affiche des publicités servies par <strong>Google AdMob</strong>, notamment des publicités interstitielles et des publicités vidéo avec récompense facultatives (qui, lorsqu'elles sont visionnées, accordent une session de fonctionnalités Pro temporaire). Google AdMob peut collecter l'identifiant publicitaire de votre appareil (IDFA sur iOS, GAID sur Android) et l'utiliser pour diffuser des publicités personnalisées. Sur iOS, cette collecte nécessite votre consentement explicite dans le cadre du dispositif App Tracking Transparency (ATT) d'Apple ; nous vous demanderons ce consentement avant tout partage d'identifiant. Dans l'EEE, au Royaume-Uni et en Suisse, nous affichons un message de consentement certifié par Google (via la plateforme de gestion des messages aux utilisateurs de Google) avant de diffuser des publicités personnalisées ; si vous refusez, seules des publicités non personnalisées sont affichées. Cette collecte constitue un partage de renseignements personnels à des fins de publicité comportementale, ce qui peut être considéré comme une « vente » ou un « partage » au sens de la loi californienne CCPA (voir section 11) et des lois analogues. Les abonnés Pro ne voient pas de publicités et ne sont pas soumis à cette collecte de données.</p>
         <p><strong>Avis pour les résidents du Québec (Loi 25, art. 8.1) :</strong> L'Application utilise des technologies de profilage (Google AdMob, niveau gratuit uniquement) susceptibles d'identifier ou de profiler une personne à des fins publicitaires. Conformément à la Loi sur la protection des renseignements personnels dans le secteur privé (Loi 25), nous vous en informons et vous pouvez vous y opposer à tout moment : refusez le consentement ATT sur iOS, ou réinitialisez votre identifiant publicitaire sur Android (<em>Paramètres → Confidentialité → Publicités</em>). La souscription à un abonnement Pro supprime toute publicité et tout profilage.</p>
 
         <h3>2.9 Authentification biométrique</h3>
@@ -476,6 +480,7 @@
         <ul>
           <li><strong>Requête de recherche d'emploi</strong> — dérivée de vos résultats d'analyse (poste cible et lacunes de compétences clés). Il s'agit d'une courte chaîne de texte telle que « Ingénieur logiciel Python » et elle n'inclut pas le contenu de votre CV, votre nom ni votre adresse courriel.</li>
           <li><strong>Préférence de localisation</strong> — une ville ou une région que vous saisissez facultativement (p. ex. « New York » ou « Londres »), ainsi que le code pays de votre appareil déduit de votre paramètre de langue. Ces informations sont stockées localement sur votre appareil et transmises à notre infrastructure pour filtrer les résultats géographiquement. Vous pouvez mettre à jour ou effacer votre préférence de localisation à tout moment via le filtre Localisation dans Offres d'emploi.</li>
+          <li><strong>Localisation approximative de l'appareil (facultative)</strong> — pour aider à pré-remplir votre lieu de recherche d'emploi, l'Application peut vous demander la permission d'accéder à la <strong>localisation approximative</strong> de votre appareil via les services de localisation de votre système d'exploitation. Si vous accordez la permission, la localisation de votre appareil est utilisée <strong>uniquement sur votre appareil</strong> et est immédiatement convertie par le système d'exploitation en un nom de ville et un code pays ; les coordonnées GPS sous-jacentes ne sont <strong>jamais stockées ni transmises à nos serveurs</strong>. Seuls la ville et le code pays obtenus sont utilisés (et peuvent être envoyés à notre infrastructure pour filtrer les annonces), exactement comme si vous les aviez saisis vous-même. L'accès à la localisation est entièrement facultatif — si vous le refusez, l'Application se rabat sur la localisation dérivée de votre CV ou le code pays de la langue de votre appareil. Vous pouvez accorder ou révoquer cette permission à tout moment dans les paramètres de votre appareil.</li>
           <li><strong>Compteur d'utilisation des recherches d'emploi</strong> — un compteur quotidien par utilisateur lié à votre identifiant de compte est maintenu côté serveur pour appliquer les limites quotidiennes. Cet enregistrement contient uniquement votre identifiant de compte, la date et le nombre de requêtes — et non le contenu de vos recherches.</li>
         </ul>
 
@@ -490,14 +495,14 @@
           <li>Pour comprendre l'utilisation des fonctionnalités et améliorer l'Application (avec consentement, le cas échéant)</li>
           <li>Pour diffuser des publicités sur le niveau gratuit (iOS : uniquement avec le consentement ATT)</li>
           <li>Pour respecter nos obligations légales et faire respecter nos Conditions d'utilisation</li>
-          <li>Pour récupérer des offres d'emploi pertinentes selon votre localisation via des fournisseurs tiers de recherche d'emploi, en utilisant votre requête pseudonymisée et votre préférence de localisation</li>
+          <li>Pour récupérer des offres d'emploi pertinentes selon votre localisation via des fournisseurs tiers de recherche d'emploi, en utilisant votre requête pseudonymisée et votre préférence de localisation (qui peut, avec votre permission, être pré-remplie à partir de la localisation approximative de votre appareil)</li>
           <li>Pour détecter et prévenir la fraude, les abus et les menaces à la sécurité</li>
         </ul>
 
         <h2>4. Bases juridiques du traitement (RGPD / RGPD britannique)</h2>
         <p>Pour les utilisateurs de l'UE, de l'EEE, du Royaume-Uni et de la Suisse, nous nous appuyons sur les bases juridiques suivantes :</p>
         <ul>
-          <li><strong>Exécution d'un contrat</strong> — création de compte, authentification, analyse de CV, gestion des abonnements</li>
+          <li><strong>Exécution d'un contrat</strong> — création de compte, authentification (mot de passe ou Google Sign-In), analyse de CV, gestion des abonnements</li>
           <li><strong>Consentement</strong> — analyse (PostHog), rapports de plantage (Sentry) et publicité personnalisée (AdMob / ATT). Vous pouvez retirer votre consentement à tout moment dans <em>Paramètres → Préférences du compte → Confidentialité et consentement</em>.</li>
           <li><strong>Intérêts légitimes</strong> — prévention de la fraude, détection des abus, amélioration de la fiabilité du service. Nous avons évalué que ces intérêts ne priment pas sur vos droits et libertés fondamentaux.</li>
           <li><strong>Obligation légale</strong> — divulgations ou traitements requis par la loi applicable</li>
@@ -551,12 +556,15 @@
         </ul>
         <p>Les fournisseurs interrogés directement depuis votre appareil reçoivent également l'adresse IP de votre appareil, inhérente à la requête réseau. Aucun de ces fournisseurs ne reçoit le contenu de votre CV, votre nom, votre adresse courriel ni autres renseignements de compte. Les clés API des fournisseurs acheminés via notre infrastructure (Adzuna, Jooble) sont stockées dans notre coffre-fort et ne sont jamais intégrées dans le binaire de l'Application.</p>
 
+        <h3>5.11 Fournisseur d'authentification</h3>
+        <p><strong>Google</strong> (Google LLC, États-Unis) — si vous choisissez <strong>Google Sign-In</strong>, Google vous authentifie et nous fournit votre nom, votre adresse courriel et votre identifiant de compte Google pour créer votre compte ou y accéder. Le traitement de vos données par Google dans le cadre de la connexion est régi par la politique de confidentialité de Google. Vous pouvez utiliser la connexion par courriel et mot de passe si vous préférez ne pas utiliser Google Sign-In. Notre fournisseur d'authentification et de base de données, <strong>Supabase</strong> (section 5.1), stocke vos identifiants de compte uniquement sous forme de hachage salé.</p>
+
         <h2>6. Sécurité des données</h2>
         <p>Nous mettons en œuvre les mesures techniques et organisationnelles suivantes :</p>
         <ul>
           <li>Toutes les données en transit sont chiffrées avec TLS 1.2 ou supérieur</li>
           <li>Les fichiers CV en cache local sont chiffrés au repos avec AES-256-GCM avec une clé de 256 bits par utilisateur stockée dans l'élément sécurisé de l'appareil (Keychain iOS / Keystore Android) avec accès limité au premier déverrouillage</li>
-          <li>L'authentification utilise des codes d'accès à usage unique (OTP) ; aucun mot de passe n'est stocké</li>
+          <li>Les mots de passe de compte ne sont jamais stockés en clair — seule une version hachée et salée est conservée par notre fournisseur d'authentification ; des codes d'accès à usage unique (OTP) sont requis pour la vérification du courriel, la réinitialisation du mot de passe et la suppression du compte</li>
           <li>Les clés API pour les services d'IA sont stockées dans notre coffre-fort principal et ne sont jamais intégrées dans le binaire de l'Application</li>
           <li>La sécurité au niveau des lignes restreint tous les accès à la base de données aux données de l'utilisateur authentifié</li>
           <li>La suppression de compte nécessite une vérification OTP et est limitée en débit</li>
@@ -800,8 +808,8 @@
     const FR_EYEBROW = 'Resuvia — Légal';
     const EN_HERO   = 'Privacy Policy';
     const FR_HERO   = 'Politique de confidentialité';
-    const EN_DATE   = 'Effective Date: June 6, 2026  ·  Last Updated: June 13, 2026';
-    const FR_DATE   = 'Date d’entrée en vigueur : 6 juin 2026  ·  Dernière mise à jour : 13 juin 2026';
+    const EN_DATE   = 'Effective Date: June 6, 2026  ·  Last Updated: June 15, 2026';
+    const FR_DATE   = 'Date d’entrée en vigueur : 6 juin 2026  ·  Dernière mise à jour : 15 juin 2026';
 
     function setLang(lang) {
       const isFr = lang === 'fr';
