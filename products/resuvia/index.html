@@ -64,7 +64,7 @@
       <div class="rv-hero-text">
         <div class="rv-app-badge">
           <span class="rv-badge-dot"></span>
-          Available Free · iOS &amp; Android
+          Now on Android · iOS Coming Soon
         </div>
         <h1 class="section-title">
           Land your dream job<br />
@@ -81,9 +81,9 @@
           <a href="#features" class="btn-ghost">See features</a>
         </div>
         <div class="rv-platforms">
-          <span class="rv-platform-tag">iPhone</span>
-          <span class="rv-platform-tag">iPad</span>
           <span class="rv-platform-tag">Android</span>
+          <span class="rv-platform-tag rv-platform-tag-soon">iPhone · Soon</span>
+          <span class="rv-platform-tag rv-platform-tag-soon">iPad · Soon</span>
         </div>
       </div>
       <div class="rv-hero-phone">
@@ -284,23 +284,48 @@
         <div class="rv-dl-content">
           <p class="section-eyebrow center" style="color: var(--lavender-light);">Get Started</p>
           <h2 class="section-title center" style="color: #fff;">Free to download.<br /><span class="gradient-text-light">Start applying smarter today.</span></h2>
-          <div class="rv-store-badges">
-            <div class="rv-store-badge">
-              <span class="rv-store-icon">🍎</span>
-              <div>
-                <div class="rv-store-sub">Coming soon to the</div>
-                <div class="rv-store-name">App Store</div>
+          <div class="rv-store-cards">
+
+            <!-- ANDROID — LIVE -->
+            <a href="https://play.google.com/store/apps/details?id=com.xentarai.resuvia"
+               target="_blank" rel="noopener"
+               class="rv-store-card rv-store-card-live"
+               aria-label="Download Resuvia on Google Play">
+              <div class="rv-store-card-header">
+                <span class="rv-store-icon">▶</span>
+                <div>
+                  <div class="rv-store-sub">Get it on</div>
+                  <div class="rv-store-name">Google Play</div>
+                </div>
+                <span class="rv-live-chip">Live</span>
               </div>
-            </div>
-            <div class="rv-store-badge">
-              <span class="rv-store-icon">▶</span>
-              <div>
-                <div class="rv-store-sub">Coming soon on</div>
-                <div class="rv-store-name">Google Play</div>
+              <div class="rv-qr-wrap">
+                <img src="./images/qr-android.png"
+                     alt="Scan to download Resuvia on Android"
+                     width="140" height="140"
+                     loading="lazy" />
               </div>
+              <p class="rv-qr-caption">Scan to install · Android</p>
+            </a>
+
+            <!-- iOS — COMING SOON -->
+            <div class="rv-store-card rv-store-card-soon" aria-label="Resuvia on App Store — coming soon">
+              <div class="rv-store-card-header">
+                <span class="rv-store-icon">🍎</span>
+                <div>
+                  <div class="rv-store-sub">Coming soon to the</div>
+                  <div class="rv-store-name">App Store</div>
+                </div>
+                <span class="rv-soon-chip">Soon</span>
+              </div>
+              <div class="rv-qr-wrap rv-qr-placeholder" aria-hidden="true">
+                <div class="rv-qr-soon-icon">🍎</div>
+                <p class="rv-qr-soon-text">Available soon<br/>on iPhone &amp; iPad</p>
+              </div>
+              <p class="rv-qr-caption">iOS · iPhone &amp; iPad</p>
             </div>
+
           </div>
-          <p style="color: rgba(255,255,255,0.5); font-size: 0.85rem; margin-top: 20px;">Coming soon. Check back for download links.</p>
         </div>
       </div>
     </div>
