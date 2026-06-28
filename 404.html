@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resuvia</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/style.css" />
+  <script>
+    // Referral fallback. When the Resuvia app is installed and the deep link is
+    // verified (assetlinks.json / apple-app-site-association), the OS opens the
+    // app directly and this page never loads. This branch only runs when the
+    // app is NOT installed: stash the referral code and forward to the product
+    // page so the user can install, then enter the code.
+    (function () {
+      var m = window.location.pathname.match(/^\/r\/([A-HJ-NP-Z2-9]{8})\/?$/i);
+      if (m) {
+        var code = m[1].toUpperCase();
+        try { localStorage.setItem('resuvia_ref', code); } catch (e) {}
+        window.location.replace('/products/resuvia/?ref=' + encodeURIComponent(code));
+      }
+    })();
+  </script>
+</head>
+<body>
+  <main style="max-width:640px;margin:0 auto;padding:80px 24px;text-align:center;">
+    <h1>Page not found</h1>
+    <p>The page you’re looking for doesn’t exist.</p>
+    <p><a href="/">Return home</a> &middot; <a href="/products/resuvia/">Resuvia</a></p>
+  </main>
+</body>
+</html>

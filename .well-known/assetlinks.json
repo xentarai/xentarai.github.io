@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.xentarai.resuvia",
+      "sha256_cert_fingerprints": [
+        "CA:08:C7:4F:7D:81:7A:C9:86:42:A8:EE:D1:0D:5E:CE:94:A8:45:0A:2A:3A:5A:34:14:25:BE:2E:1D:6C:9C:C2"
+      ]
+    }
+  }
+]

@@ -76,7 +76,7 @@
     <div class="container">
       <p class="section-eyebrow" id="hero-eyebrow">Resuvia — Legal</p>
       <h1 class="section-title"><span class="gradient-text" id="hero-title">Privacy Policy</span></h1>
-      <p class="page-hero-sub" id="hero-date">Effective Date: June 6, 2026 &nbsp;·&nbsp; Last Updated: June 25, 2026</p>
+      <p class="page-hero-sub" id="hero-date">Effective Date: June 6, 2026 &nbsp;·&nbsp; Last Updated: June 28, 2026</p>
       <div class="lang-toggle-wrap" role="group" aria-label="Language selector">
         <button id="btn-en" class="lang-btn lang-active" onclick="setLang('en')" aria-pressed="true">EN</button>
         <span class="lang-sep" aria-hidden="true">|</span>
@@ -143,6 +143,9 @@
           <li><strong>Job search usage count</strong> — a per-user daily counter linked to your account ID is maintained server-side to enforce daily quota limits. This record contains only your account ID, the date, and the request count — not the content of your searches.</li>
         </ul>
 
+        <h3>2.12 Referral Program</h3>
+        <p>If you invite a friend using your personal referral code or link, or apply a referral code you received, we record a <strong>referral relationship</strong> between the two accounts in order to grant the associated bonus credits and prevent abuse. Specifically, we generate a unique referral code for your account and — when a code is applied — store a record linking the referred account to the referring account (the account identifiers of the two parties and the code used). We do <strong>not</strong> access your contacts or address book; sharing a referral link is performed entirely through your device's own share sheet, and you choose who to send it to. The reward consists solely of <strong>free in-app analysis credits with no monetary value</strong>. Because this safeguard would be defeated if the record were erased, the referral relationship record is <strong>retained even after account deletion</strong> (see Section 8); it contains only account identifiers and the referral code, and no other personal information.</p>
+
         <h2>3. How We Use Your Information</h2>
         <ul>
           <li>To create and manage your account and authenticate your identity</li>
@@ -155,6 +158,7 @@
           <li>To serve advertisements on the free tier (iOS: only with ATT consent)</li>
           <li>To comply with legal obligations and enforce our Terms of Use</li>
           <li>To retrieve location-relevant job listings via third-party job search providers using your pseudonymised search query and location preference (which may, with your permission, be pre-filled from your device's approximate location)</li>
+          <li>To operate our referral program — generating referral codes, attributing referrals between accounts, granting bonus credits, and preventing referral fraud</li>
           <li>To detect and prevent fraud, abuse, and security threats</li>
         </ul>
 
@@ -652,6 +656,9 @@
           <li><strong>Compteur d'utilisation des recherches d'emploi</strong> — un compteur quotidien par utilisateur lié à votre identifiant de compte est maintenu côté serveur pour appliquer les limites quotidiennes. Cet enregistrement contient uniquement votre identifiant de compte, la date et le nombre de requêtes — et non le contenu de vos recherches.</li>
         </ul>
 
+        <h3>2.12 Programme de parrainage</h3>
+        <p>Si vous invitez un ami au moyen de votre code ou lien de parrainage personnel, ou si vous appliquez un code de parrainage que vous avez reçu, nous enregistrons une <strong>relation de parrainage</strong> entre les deux comptes afin d'accorder les crédits bonus associés et de prévenir les abus. Plus précisément, nous générons un code de parrainage unique pour votre compte et — lorsqu'un code est appliqué — nous conservons un enregistrement reliant le compte parrainé au compte parrain (les identifiants de compte des deux parties et le code utilisé). Nous <strong>n'accédons pas</strong> à vos contacts ni à votre carnet d'adresses; le partage d'un lien de parrainage s'effectue entièrement via la feuille de partage de votre propre appareil, et vous choisissez à qui l'envoyer. La récompense consiste uniquement en des <strong>crédits d'analyse gratuits dans l'application, sans valeur monétaire</strong>. Comme cette mesure de protection serait inefficace si l'enregistrement était effacé, l'enregistrement de la relation de parrainage est <strong>conservé même après la suppression du compte</strong> (voir la Section 8); il ne contient que des identifiants de compte et le code de parrainage, et aucun autre renseignement personnel.</p>
+
         <h2>3. Comment nous utilisons vos renseignements</h2>
         <ul>
           <li>Pour créer et gérer votre compte et authentifier votre identité</li>
@@ -664,6 +671,7 @@
           <li>Pour diffuser des publicités sur le niveau gratuit (iOS : uniquement avec le consentement ATT)</li>
           <li>Pour respecter nos obligations légales et faire respecter nos Conditions d'utilisation</li>
           <li>Pour récupérer des offres d'emploi pertinentes selon votre localisation via des fournisseurs tiers de recherche d'emploi, en utilisant votre requête pseudonymisée et votre préférence de localisation (qui peut, avec votre permission, être pré-remplie à partir de la localisation approximative de votre appareil)</li>
+          <li>Pour exploiter notre programme de parrainage — générer des codes de parrainage, attribuer les parrainages entre comptes, accorder des crédits bonus et prévenir la fraude au parrainage</li>
           <li>Pour détecter et prévenir la fraude, les abus et les menaces à la sécurité</li>
         </ul>
 
@@ -1136,8 +1144,8 @@
     const FR_EYEBROW = 'Resuvia — Légal';
     const EN_HERO   = 'Privacy Policy';
     const FR_HERO   = 'Politique de confidentialité';
-    const EN_DATE   = 'Effective Date: June 6, 2026  ·  Last Updated: June 25, 2026';
-    const FR_DATE   = 'Date d’entrée en vigueur : 6 juin 2026  ·  Dernière mise à jour : 25 juin 2026';
+    const EN_DATE   = 'Effective Date: June 6, 2026  ·  Last Updated: June 28, 2026';
+    const FR_DATE   = 'Date d’entrée en vigueur : 6 juin 2026  ·  Dernière mise à jour : 28 juin 2026';
 
     function setLang(lang) {
       const isFr = lang === 'fr';
