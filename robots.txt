@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://xentarai.com/sitemap.xml
