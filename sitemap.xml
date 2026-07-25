@@ -1,18 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
   <url>
     <loc>https://xentarai.com/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://xentarai.com/og-icon.png</image:loc>
+      <image:title>Xentar AI logo</image:title>
+    </image:image>
   </url>
 
   <url>
     <loc>https://xentarai.com/products/resuvia/</loc>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-07-25</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://xentarai.com/products/resuvia/images/og-image.png</image:loc>
+      <image:title>Resuvia — AI-Powered Resume Analysis &amp; Career Coaching</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://xentarai.com/products/resuvia/images/qr-android.png</image:loc>
+      <image:title>QR code to download Resuvia on Google Play</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://xentarai.com/products/resuvia/support.html</loc>
+    <lastmod>2026-07-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
 
   <url>

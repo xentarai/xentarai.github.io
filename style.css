@@ -845,14 +845,31 @@ body {
   font-size: 0.78rem;
   font-weight: 600;
 }
-.product-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+.product-actions { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
 .case-study-note { font-size: 0.88rem; color: var(--text-muted); margin: -8px 0 20px; }
 .case-study-note a { color: var(--violet); text-decoration: underline; text-underline-offset: 2px; }
 .case-study-note a:hover { color: var(--violet-dark); }
+.product-qr {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 4px;
+}
+.product-qr-wrap {
+  background: #fff;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 5px;
+  box-shadow: var(--shadow-sm);
+  flex-shrink: 0;
+}
+.product-qr-wrap img { display: block; border-radius: 3px; }
+.product-qr span { font-size: 0.78rem; color: var(--text-muted); line-height: 1.35; }
 @media (max-width: 640px) {
   .product-card { padding: 32px 24px; }
   .product-name { font-size: 1.7rem; }
   .product-icon { width: 52px; height: 52px; font-size: 1.5rem; }
   .product-actions { flex-direction: column; }
   .product-actions a { justify-content: center; }
+  .product-qr { display: none; }
 }

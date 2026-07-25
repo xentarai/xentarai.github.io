@@ -526,6 +526,91 @@
 .rv-legal-card p { font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; }
 .rv-legal-link { font-size: 0.85rem; font-weight: 600; color: var(--violet); margin-top: auto; }
 
+/* FAQ ACCORDION */
+.rv-faq-list {
+  max-width: 780px;
+  margin: 40px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.rv-faq-item {
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 4px 24px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.rv-faq-item[open] { border-color: var(--border-strong); box-shadow: var(--shadow-sm); }
+.rv-faq-item summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 18px 0;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.02rem;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.rv-faq-item summary::-webkit-details-marker { display: none; }
+.rv-faq-plus {
+  flex-shrink: 0;
+  width: 22px; height: 22px;
+  border-radius: 50%;
+  background: var(--lavender-ultra);
+  color: var(--violet);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+  transition: transform 0.2s;
+}
+.rv-faq-item[open] .rv-faq-plus { transform: rotate(45deg); }
+.rv-faq-item p {
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+/* QR MINI VARIANTS (hero + footer) */
+.rv-qr-mini {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 24px;
+}
+.rv-qr-mini-wrap {
+  background: #fff;
+  border-radius: var(--radius-md);
+  padding: 6px;
+  box-shadow: var(--shadow-sm);
+  border: 1.5px solid var(--border);
+  flex-shrink: 0;
+}
+.rv-qr-mini-wrap img { display: block; border-radius: 3px; }
+.rv-qr-mini-text { font-size: 0.78rem; line-height: 1.4; color: var(--text-muted); }
+.rv-qr-mini-text strong { color: var(--text-primary); font-weight: 700; }
+
+.rv-footer-qr {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.rv-footer-qr-wrap {
+  background: #fff;
+  border-radius: 6px;
+  padding: 4px;
+  flex-shrink: 0;
+}
+.rv-footer-qr-wrap img { display: block; border-radius: 2px; }
+.rv-footer-qr span { font-size: 0.78rem; color: rgba(255,255,255,0.5); }
+
 /* RESPONSIVE */
 @media (max-width: 1024px) {
   .rv-hero-inner { grid-template-columns: 1fr; }
@@ -546,6 +631,11 @@
   .rv-phone-frame { width: 180px; }
   .rv-store-cards { flex-direction: column; align-items: center; }
   .rv-store-card { width: 100%; max-width: 300px; }
+  .rv-qr-mini { display: none; }
+  .rv-faq-item summary { font-size: 0.94rem; }
+}
+@media (max-width: 480px) {
+  .rv-footer-qr { display: none; }
 }
 @media (max-width: 480px) {
   .rv-hero-actions { flex-direction: column; }
