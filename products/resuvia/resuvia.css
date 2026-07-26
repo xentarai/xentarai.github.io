@@ -85,6 +85,26 @@
   letter-spacing: 0.03em;
 }
 
+.rv-ph-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 18px;
+  padding: 6px 14px 6px 6px;
+  background: rgba(255,255,255,0.9);
+  border: 1px solid rgba(30,27,75,0.1);
+  border-radius: var(--radius-full);
+  text-decoration: none;
+  color: var(--text-primary);
+  font-size: 0.82rem;
+  font-weight: 600;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: 0 2px 8px rgba(30,27,75,0.06);
+}
+.rv-ph-badge:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba(30,27,75,0.12); }
+.rv-ph-badge svg { flex-shrink: 0; }
+.rv-ph-badge span { color: var(--text-secondary); font-weight: 500; }
+
 /* Phone mockup */
 .rv-hero-phone { flex-shrink: 0; }
 .rv-phone-frame {
