@@ -8,7 +8,7 @@ Resuvia is a free AI-powered resume analyzer and ATS score checker, available on
 
 Key facts:
 - Platform: Android (Google Play). iOS version in development.
-- Pricing: Free tier includes 1 AI analysis/day, ATS score + breakdown, AI rewrites, all 16 resume templates (PDF/DOCX export), 1 resume + 1 cover letter download/day, Resume Version History, 1 AI Career Roadmap generation/day, real job board matches. Pro subscription unlocks 20 analyses/day, unlimited downloads, 20 Career Roadmap generations/day, Resume Refinement, and no ads.
+- Pricing: Free tier includes 1 AI analysis/day, ATS score + breakdown, AI rewrites, Resume Refinement (shares analysis quota), all 16 resume templates (PDF/DOCX export), 1 resume + 1 cover letter download/day, Resume Version History, 1 AI Career Roadmap generation/day, real job board matches (15 searches/day). Pro subscription unlocks 20 analyses/day (Refine shares same pool), unlimited downloads, 20 Career Roadmap generations/day, 60 job searches/day, and no ads.
 - Privacy: resume PDF is parsed and encrypted (AES-256) locally on-device; the file itself is never uploaded to Xentar AI servers, only extracted text is sent to AI providers for analysis.
 - AI models used for analysis: a routed chain including Gemini, Mistral, and Claude.
 - Job description input accepts pasted text or a URL from most major job boards (LinkedIn, Indeed, Glassdoor, ZipRecruiter, Greenhouse, Lever, Workday, Ashby, etc.), plus live listings from Remotive, TheMuse, and Arbeitnow.
