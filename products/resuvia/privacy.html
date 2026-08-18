@@ -99,7 +99,7 @@
     <div class="container">
       <p class="section-eyebrow" id="hero-eyebrow">Resuvia — Legal</p>
       <h1 class="section-title"><span class="gradient-text" id="hero-title">Privacy Policy</span></h1>
-      <p class="page-hero-sub" id="hero-date">Effective Date: June 6, 2026 &nbsp;·&nbsp; Last Updated: July 19, 2026</p>
+      <p class="page-hero-sub" id="hero-date">Effective Date: June 6, 2026 &nbsp;·&nbsp; Last Updated: August 17, 2026</p>
       <div class="lang-toggle-wrap" role="group" aria-label="Language selector">
         <button id="btn-en" class="lang-btn lang-active" onclick="setLang('en')" aria-pressed="true">EN</button>
         <span class="lang-sep" aria-hidden="true">|</span>
@@ -137,10 +137,10 @@
         <p>Your résumé file and, for Pro subscribers, up to 20 résumé versions are stored <strong>locally on your device</strong> in the app's private storage directory, encrypted with AES-256-GCM. This data never leaves your device except as described in Section 2.3 for AI analysis. Cached résumé files are automatically deleted after 60 days.</p>
 
         <h3>2.5 Usage and Analytics Data</h3>
-        <p>We use <strong>PostHog</strong> (product analytics) to understand how features are used. Data collected includes feature interactions, screen views, and anonymised device and platform information. This data is linked to a randomly generated UUID, not your name or email. Analytics collection is <strong>consent-gated</strong>: users in the EU, EEA, UK, Switzerland, Brazil, and Canada are asked for explicit opt-in consent before any analytics data is collected. All other users may opt out at any time via in-app settings.</p>
+        <p>We use <strong>PostHog</strong> (product analytics) to understand how features are used. Data collected includes feature interactions, screen views, anonymised device and platform information, and coarse feature-reliability signals (for example, which step of a multi-step process failed, with no résumé, job description, or account content attached). When you purchase a subscription or a credit pack, analytics also records which product was purchased and its list price, so we can measure conversion — this is separate from the payment processing described in Section 2.7 and never includes your card or billing details. This data is linked to a randomly generated UUID, not your name or email. Analytics collection is <strong>consent-gated</strong>: users in the EU, EEA, UK, Switzerland, Brazil, and Canada are asked for explicit opt-in consent before any analytics data is collected. All other users may opt out at any time via in-app settings.</p>
 
-        <h3>2.6 Crash Reports</h3>
-        <p>We use <strong>Sentry</strong> for crash reporting. If the App crashes, a report including the stack trace, device model, OS version, and App version is sent. No personally identifiable information (name, email, résumé content) is included in crash reports. Crash reporting is <strong>consent-gated</strong> in the same jurisdictions listed above.</p>
+        <h3>2.6 Crash Reports and Performance Diagnostics</h3>
+        <p>We use <strong>Sentry</strong> for crash reporting and performance diagnostics. If the App crashes, a report including the stack trace, device model, OS version, and App version is sent. Separately, and even when nothing has crashed, Sentry also collects anonymised timing measurements for a small number of operations — running an analysis, retrieving a job posting, and verifying a purchase — so we can detect when the App or a third-party service it depends on is slow or failing. These performance measurements contain timing and outcome data only: no résumé content, job description content, or account content. No personally identifiable information (name, email, résumé content) is included in crash reports or performance diagnostics. Both are <strong>consent-gated</strong> in the same jurisdictions listed above.</p>
 
         <h3>2.7 In-App Purchases</h3>
         <p>Pro subscriptions are purchased through the <strong>Apple App Store</strong> (iOS) or <strong>Google Play Store</strong> (Android). All billing and payment processing is handled entirely by Apple or Google. We do not collect, process, or store credit or debit card numbers or billing addresses. We receive only a non-reversible transaction receipt and a randomly generated account token from the platform to verify your subscription status.</p>
@@ -220,7 +220,7 @@
         <p><strong>PostHog</strong> (PostHog Inc., USA) — product analytics, consent-gated as described in Section 2.5.</p>
 
         <h3>5.6 Crash Reporting</h3>
-        <p><strong>Sentry</strong> (Functional Software, Inc., USA) — crash diagnostics, consent-gated as described in Section 2.6.</p>
+        <p><strong>Sentry</strong> (Functional Software, Inc., USA) — crash and performance diagnostics, consent-gated as described in Section 2.6.</p>
 
         <h3>5.7 Advertising</h3>
         <p><strong>Google AdMob</strong> (Google LLC, USA) — interstitial ads on the free tier only. See Section 2.8.</p>
@@ -920,10 +920,10 @@
         <p>Votre fichier CV et, pour les abonnés Pro, jusqu'à 20 versions de CV sont stockés <strong>localement sur votre appareil</strong> dans le répertoire de stockage privé de l'application, chiffré avec AES-256-GCM. Ces données ne quittent jamais votre appareil, sauf dans le cadre de l'analyse IA décrite à la section 2.3. Les fichiers CV en cache sont automatiquement supprimés après 60 jours.</p>
 
         <h3>2.5 Données d'utilisation et d'analyse</h3>
-        <p>Nous utilisons <strong>PostHog</strong> (analyse de produit) pour comprendre l'utilisation des fonctionnalités. Les données collectées comprennent les interactions avec les fonctionnalités, les vues d'écran et des informations anonymisées sur l'appareil et la plateforme. Ces données sont liées à un identifiant UUID généré aléatoirement, et non à votre nom ou adresse courriel. La collecte de données d'analyse est <strong>soumise au consentement</strong> : les utilisateurs de l'UE, de l'EEE, du Royaume-Uni, de la Suisse, du Brésil et du Canada doivent donner leur consentement explicite avant toute collecte. Tous les autres utilisateurs peuvent se désinscrire à tout moment dans les paramètres de l'Application.</p>
+        <p>Nous utilisons <strong>PostHog</strong> (analyse de produit) pour comprendre l'utilisation des fonctionnalités. Les données collectées comprennent les interactions avec les fonctionnalités, les vues d'écran, des informations anonymisées sur l'appareil et la plateforme, ainsi que des signaux généraux de fiabilité des fonctionnalités (par exemple, quelle étape d'un processus à plusieurs étapes a échoué, sans aucun contenu de CV, de description de poste ou de compte associé). Lorsque vous achetez un abonnement ou un forfait de crédits, les données d'analyse enregistrent également le produit acheté et son prix affiché, afin que nous puissions mesurer les conversions — ceci est distinct du traitement des paiements décrit à la section 2.7 et n'inclut jamais les détails de votre carte ou de votre facturation. Ces données sont liées à un identifiant UUID généré aléatoirement, et non à votre nom ou adresse courriel. La collecte de données d'analyse est <strong>soumise au consentement</strong> : les utilisateurs de l'UE, de l'EEE, du Royaume-Uni, de la Suisse, du Brésil et du Canada doivent donner leur consentement explicite avant toute collecte. Tous les autres utilisateurs peuvent se désinscrire à tout moment dans les paramètres de l'Application.</p>
 
-        <h3>2.6 Rapports de plantage</h3>
-        <p>Nous utilisons <strong>Sentry</strong> pour les rapports de plantage. En cas de plantage de l'Application, un rapport comprenant la trace de pile, le modèle d'appareil, la version du système d'exploitation et la version de l'Application est envoyé. Aucun renseignement personnel (nom, adresse courriel, contenu du CV) n'est inclus dans les rapports de plantage. Les rapports de plantage sont également <strong>soumis au consentement</strong> dans les mêmes territoires.</p>
+        <h3>2.6 Rapports de plantage et diagnostics de performance</h3>
+        <p>Nous utilisons <strong>Sentry</strong> pour les rapports de plantage et les diagnostics de performance. En cas de plantage de l'Application, un rapport comprenant la trace de pile, le modèle d'appareil, la version du système d'exploitation et la version de l'Application est envoyé. Séparément, et même en l'absence de plantage, Sentry recueille également des mesures de temps anonymisées pour un petit nombre d'opérations — l'exécution d'une analyse, la récupération d'une offre d'emploi et la vérification d'un achat — afin que nous puissions détecter quand l'Application ou un service tiers dont elle dépend est lent ou défaillant. Ces mesures de performance ne contiennent que des données de temps et de résultat : aucun contenu de CV, de description de poste ou de compte. Aucun renseignement personnel (nom, adresse courriel, contenu du CV) n'est inclus dans les rapports de plantage ou les diagnostics de performance. Les deux sont également <strong>soumis au consentement</strong> dans les mêmes territoires.</p>
 
         <h3>2.7 Achats intégrés</h3>
         <p>Les abonnements Pro sont achetés via l'<strong>App Store d'Apple</strong> (iOS) ou le <strong>Google Play Store</strong> (Android). Toute la facturation et le traitement des paiements sont gérés entièrement par Apple ou Google. Nous ne collectons, ne traitons ni ne conservons de numéros de carte de crédit ou de débit, ni d'adresses de facturation. Nous ne recevons qu'un reçu de transaction non réversible et un jeton de compte généré aléatoirement par la plateforme pour vérifier votre statut d'abonnement.</p>
@@ -1003,7 +1003,7 @@
         <p><strong>PostHog</strong> (PostHog Inc., États-Unis) — analyse de produit, soumise au consentement comme décrit à la section 2.5.</p>
 
         <h3>5.6 Rapports de plantage</h3>
-        <p><strong>Sentry</strong> (Functional Software, Inc., États-Unis) — diagnostic de plantage, soumis au consentement comme décrit à la section 2.6.</p>
+        <p><strong>Sentry</strong> (Functional Software, Inc., États-Unis) — diagnostic de plantage et de performance, soumis au consentement comme décrit à la section 2.6.</p>
 
         <h3>5.7 Publicité</h3>
         <p><strong>Google AdMob</strong> (Google LLC, États-Unis) — publicités interstitielles sur le niveau gratuit uniquement. Voir section 2.8.</p>
@@ -1708,8 +1708,8 @@
     const FR_EYEBROW = 'Resuvia — Légal';
     const EN_HERO   = 'Privacy Policy';
     const FR_HERO   = 'Politique de confidentialité';
-    const EN_DATE   = 'Effective Date: June 6, 2026  ·  Last Updated: July 19, 2026';
-    const FR_DATE   = 'Date d’entrée en vigueur : 6 juin 2026  ·  Dernière mise à jour : 19 juillet 2026';
+    const EN_DATE   = 'Effective Date: June 6, 2026  ·  Last Updated: August 17, 2026';
+    const FR_DATE   = 'Date d’entrée en vigueur : 6 juin 2026  ·  Dernière mise à jour : 17 août 2026';
 
     function setLang(lang) {
       const isFr = lang === 'fr';
