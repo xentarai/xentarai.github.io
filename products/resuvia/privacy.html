@@ -99,7 +99,7 @@
     <div class="container">
       <p class="section-eyebrow" id="hero-eyebrow">Resuvia — Legal</p>
       <h1 class="section-title"><span class="gradient-text" id="hero-title">Privacy Policy</span></h1>
-      <p class="page-hero-sub" id="hero-date">Effective Date: June 6, 2026 &nbsp;·&nbsp; Last Updated: August 17, 2026</p>
+      <p class="page-hero-sub" id="hero-date">Effective Date: June 6, 2026 &nbsp;·&nbsp; Last Updated: August 23, 2026</p>
       <div class="lang-toggle-wrap" role="group" aria-label="Language selector">
         <button id="btn-en" class="lang-btn lang-active" onclick="setLang('en')" aria-pressed="true">EN</button>
         <span class="lang-sep" aria-hidden="true">|</span>
@@ -123,7 +123,7 @@
         <h2>2. Information We Collect</h2>
 
         <h3>2.1 Account Information</h3>
-        <p>When you create an account we collect your <strong>first name, last name, email address</strong>, and a <strong>display name</strong>. You can sign up and sign in either with a <strong>password you choose</strong> or with <strong>Google Sign-In</strong>. We never store your password in readable form — our authentication provider (Supabase Auth) keeps only a salted, hashed version — and we never receive your Google account password. We also use <strong>one-time passcodes (OTPs)</strong> sent to your email to verify your email address, reset a forgotten password, and confirm account deletion. If you sign in with Google, we receive your name, email address, and Google account identifier from Google to create your account (see Section 5.11). You may also use the App as an anonymous Guest without providing any personal information.</p>
+        <p>When you create an account we collect your <strong>first name, last name, email address</strong>, and a <strong>display name</strong>. You can sign up and sign in with a <strong>password you choose</strong>, with <strong>Google Sign-In</strong>, or (iOS only) with <strong>Sign in with Apple</strong>. We never store your password in readable form — our authentication provider (Supabase Auth) keeps only a salted, hashed version — and we never receive your Google account password or your Apple ID credentials. We also use <strong>one-time passcodes (OTPs)</strong> sent to your email to verify your email address, reset a forgotten password, and confirm account deletion. If you sign in with Google, we receive your name, email address, and Google account identifier from Google to create your account; if you sign in with Apple, we receive your name and email address (or Apple's private relay email address, if you choose to hide your email) and your Apple account identifier from Apple (see Section 5.11). You may also use the App as an anonymous Guest without providing any personal information.</p>
 
         <h3>2.2 Résumé File Name</h3>
         <p>We store the <strong>file name</strong> of your uploaded résumé on our servers (e.g., "my_resume.pdf") solely to display it back to you. The actual PDF content is <strong>never uploaded to our servers</strong>. PDF parsing and text extraction happen entirely on your device.</p>
@@ -188,7 +188,7 @@
         <h2>4. Legal Bases for Processing (GDPR / UK GDPR)</h2>
         <p>For users in the EU, EEA, UK, and Switzerland, we rely on the following legal bases:</p>
         <ul>
-          <li><strong>Contract performance</strong> — account creation, authentication (password or Google Sign-In), résumé analysis, subscription management</li>
+          <li><strong>Contract performance</strong> — account creation, authentication (password, Google Sign-In, or Sign in with Apple), résumé analysis, subscription management</li>
           <li><strong>Consent</strong> — analytics (PostHog), crash reporting (Sentry), and personalised advertising (AdMob / ATT). You may withdraw consent at any time in <em>Settings → Account Preferences → Privacy &amp; Consent</em>.</li>
           <li><strong>Legitimate interests</strong> — fraud prevention, abuse detection, improving service reliability. We have assessed that these interests are not overridden by your fundamental rights and freedoms.</li>
           <li><strong>Legal obligation</strong> — disclosures or processing required by applicable law</li>
@@ -242,8 +242,10 @@
         </ul>
         <p>Providers queried directly from your device also receive your device's IP address as an inherent part of the network request. None of these providers receive your résumé content, name, email address, or other account information. API keys for the backend-routed providers (Adzuna, Jooble) are stored in our backend vault and are never embedded in the App binary.</p>
 
-        <h3>5.11 Authentication Provider</h3>
-        <p><strong>Google</strong> (Google LLC, USA) — if you choose <strong>Google Sign-In</strong>, Google authenticates you and provides us with your name, email address, and Google account identifier to create or access your account. Google's handling of your data in connection with sign-in is governed by Google's own privacy policy. You can use email-and-password sign-in instead if you prefer not to use Google Sign-In. Our authentication and database provider, <strong>Supabase</strong> (Section 5.1), stores your account credentials only as a salted hash.</p>
+        <h3>5.11 Authentication Providers</h3>
+        <p><strong>Google</strong> (Google LLC, USA) — if you choose <strong>Google Sign-In</strong>, Google authenticates you and provides us with your name, email address, and Google account identifier to create or access your account. Google's handling of your data in connection with sign-in is governed by Google's own privacy policy.</p>
+        <p><strong>Apple</strong> (Apple Inc., USA) — on iOS, if you choose <strong>Sign in with Apple</strong>, Apple authenticates you and provides us with your name, an email address (or Apple's private relay address, if you choose to hide your email), and your Apple account identifier to create or access your account. Apple's handling of your data in connection with sign-in is governed by Apple's own privacy policy. Sign in with Apple is not offered on Android.</p>
+        <p>You can use email-and-password sign-in instead if you prefer not to use Google Sign-In or Sign in with Apple. Our authentication and database provider, <strong>Supabase</strong> (Section 5.1), stores your account credentials only as a salted hash.</p>
 
         <h2>6. Data Security</h2>
         <p>We implement the following technical and organisational measures:</p>
@@ -906,7 +908,7 @@
         <h2>2. Renseignements que nous collectons</h2>
 
         <h3>2.1 Informations de compte</h3>
-        <p>Lors de la création d'un compte, nous collectons votre <strong>prénom, nom de famille, adresse courriel</strong> et un <strong>nom d'affichage</strong>. Vous pouvez créer un compte et vous connecter soit avec un <strong>mot de passe de votre choix</strong>, soit avec <strong>Google Sign-In</strong>. Nous ne stockons jamais votre mot de passe en clair — notre fournisseur d'authentification (Supabase Auth) n'en conserve qu'une version hachée et salée — et nous ne recevons jamais le mot de passe de votre compte Google. Nous utilisons également des <strong>codes d'accès à usage unique (OTP)</strong> envoyés à votre adresse courriel pour vérifier votre adresse courriel, réinitialiser un mot de passe oublié et confirmer la suppression du compte. Si vous vous connectez avec Google, nous recevons de Google votre nom, votre adresse courriel et votre identifiant de compte Google pour créer votre compte (voir section 5.11). Vous pouvez également utiliser l'Application en tant qu'invité anonyme sans fournir de renseignements personnels.</p>
+        <p>Lors de la création d'un compte, nous collectons votre <strong>prénom, nom de famille, adresse courriel</strong> et un <strong>nom d'affichage</strong>. Vous pouvez créer un compte et vous connecter avec un <strong>mot de passe de votre choix</strong>, avec <strong>Google Sign-In</strong>, ou (iOS uniquement) avec <strong>Sign in with Apple</strong>. Nous ne stockons jamais votre mot de passe en clair — notre fournisseur d'authentification (Supabase Auth) n'en conserve qu'une version hachée et salée — et nous ne recevons jamais le mot de passe de votre compte Google ni vos identifiants Apple. Nous utilisons également des <strong>codes d'accès à usage unique (OTP)</strong> envoyés à votre adresse courriel pour vérifier votre adresse courriel, réinitialiser un mot de passe oublié et confirmer la suppression du compte. Si vous vous connectez avec Google, nous recevons de Google votre nom, votre adresse courriel et votre identifiant de compte Google pour créer votre compte; si vous vous connectez avec Apple, nous recevons d'Apple votre nom et une adresse courriel (ou l'adresse de relais privé d'Apple, si vous choisissez de masquer votre courriel) ainsi que votre identifiant de compte Apple (voir section 5.11). Vous pouvez également utiliser l'Application en tant qu'invité anonyme sans fournir de renseignements personnels.</p>
 
         <h3>2.2 Nom du fichier CV</h3>
         <p>Nous conservons sur nos serveurs le <strong>nom du fichier</strong> de votre CV téléversé (p. ex., « mon_cv.pdf ») uniquement pour vous l'afficher. Le contenu réel du fichier PDF <strong>n'est jamais téléversé sur nos serveurs</strong>. L'analyse et l'extraction du texte du PDF s'effectuent entièrement sur votre appareil.</p>
@@ -971,7 +973,7 @@
         <h2>4. Bases juridiques du traitement (RGPD / RGPD britannique)</h2>
         <p>Pour les utilisateurs de l'UE, de l'EEE, du Royaume-Uni et de la Suisse, nous nous appuyons sur les bases juridiques suivantes :</p>
         <ul>
-          <li><strong>Exécution d'un contrat</strong> — création de compte, authentification (mot de passe ou Google Sign-In), analyse de CV, gestion des abonnements</li>
+          <li><strong>Exécution d'un contrat</strong> — création de compte, authentification (mot de passe, Google Sign-In ou Sign in with Apple), analyse de CV, gestion des abonnements</li>
           <li><strong>Consentement</strong> — analyse (PostHog), rapports de plantage (Sentry) et publicité personnalisée (AdMob / ATT). Vous pouvez retirer votre consentement à tout moment dans <em>Paramètres → Préférences du compte → Confidentialité et consentement</em>.</li>
           <li><strong>Intérêts légitimes</strong> — prévention de la fraude, détection des abus, amélioration de la fiabilité du service. Nous avons évalué que ces intérêts ne priment pas sur vos droits et libertés fondamentaux.</li>
           <li><strong>Obligation légale</strong> — divulgations ou traitements requis par la loi applicable</li>
@@ -1025,8 +1027,10 @@
         </ul>
         <p>Les fournisseurs interrogés directement depuis votre appareil reçoivent également l'adresse IP de votre appareil, inhérente à la requête réseau. Aucun de ces fournisseurs ne reçoit le contenu de votre CV, votre nom, votre adresse courriel ni autres renseignements de compte. Les clés API des fournisseurs acheminés via notre infrastructure (Adzuna, Jooble) sont stockées dans notre coffre-fort et ne sont jamais intégrées dans le binaire de l'Application.</p>
 
-        <h3>5.11 Fournisseur d'authentification</h3>
-        <p><strong>Google</strong> (Google LLC, États-Unis) — si vous choisissez <strong>Google Sign-In</strong>, Google vous authentifie et nous fournit votre nom, votre adresse courriel et votre identifiant de compte Google pour créer votre compte ou y accéder. Le traitement de vos données par Google dans le cadre de la connexion est régi par la politique de confidentialité de Google. Vous pouvez utiliser la connexion par courriel et mot de passe si vous préférez ne pas utiliser Google Sign-In. Notre fournisseur d'authentification et de base de données, <strong>Supabase</strong> (section 5.1), stocke vos identifiants de compte uniquement sous forme de hachage salé.</p>
+        <h3>5.11 Fournisseurs d'authentification</h3>
+        <p><strong>Google</strong> (Google LLC, États-Unis) — si vous choisissez <strong>Google Sign-In</strong>, Google vous authentifie et nous fournit votre nom, votre adresse courriel et votre identifiant de compte Google pour créer votre compte ou y accéder. Le traitement de vos données par Google dans le cadre de la connexion est régi par la politique de confidentialité de Google.</p>
+        <p><strong>Apple</strong> (Apple Inc., États-Unis) — sur iOS, si vous choisissez <strong>Sign in with Apple</strong>, Apple vous authentifie et nous fournit votre nom, une adresse courriel (ou l'adresse de relais privé d'Apple, si vous choisissez de masquer votre courriel) et votre identifiant de compte Apple pour créer votre compte ou y accéder. Le traitement de vos données par Apple dans le cadre de la connexion est régi par la politique de confidentialité d'Apple. Sign in with Apple n'est pas proposé sur Android.</p>
+        <p>Vous pouvez utiliser la connexion par courriel et mot de passe si vous préférez ne pas utiliser Google Sign-In ou Sign in with Apple. Notre fournisseur d'authentification et de base de données, <strong>Supabase</strong> (section 5.1), stocke vos identifiants de compte uniquement sous forme de hachage salé.</p>
 
         <h2>6. Sécurité des données</h2>
         <p>Nous mettons en œuvre les mesures techniques et organisationnelles suivantes :</p>
@@ -1708,8 +1712,8 @@
     const FR_EYEBROW = 'Resuvia — Légal';
     const EN_HERO   = 'Privacy Policy';
     const FR_HERO   = 'Politique de confidentialité';
-    const EN_DATE   = 'Effective Date: June 6, 2026  ·  Last Updated: August 17, 2026';
-    const FR_DATE   = 'Date d’entrée en vigueur : 6 juin 2026  ·  Dernière mise à jour : 17 août 2026';
+    const EN_DATE   = 'Effective Date: June 6, 2026  ·  Last Updated: August 23, 2026';
+    const FR_DATE   = 'Date d’entrée en vigueur : 6 juin 2026  ·  Dernière mise à jour : 23 août 2026';
 
     function setLang(lang) {
       const isFr = lang === 'fr';

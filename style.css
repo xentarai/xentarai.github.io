@@ -845,6 +845,11 @@ body {
   font-size: 0.78rem;
   font-weight: 600;
 }
+.platform-badge-soon {
+  background: transparent;
+  color: var(--text-muted);
+  border: 1px dashed var(--border-strong);
+}
 .product-actions { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
 .case-study-note { font-size: 0.88rem; color: var(--text-muted); margin: -8px 0 20px; }
 .case-study-note a { color: var(--violet); text-decoration: underline; text-underline-offset: 2px; }
