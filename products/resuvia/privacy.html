@@ -99,7 +99,7 @@
     <div class="container">
       <p class="section-eyebrow" id="hero-eyebrow">Resuvia — Legal</p>
       <h1 class="section-title"><span class="gradient-text" id="hero-title">Privacy Policy</span></h1>
-      <p class="page-hero-sub" id="hero-date">Effective Date: June 6, 2026 &nbsp;·&nbsp; Last Updated: August 23, 2026</p>
+      <p class="page-hero-sub" id="hero-date">Effective Date: June 6, 2026 &nbsp;·&nbsp; Last Updated: September 9, 2026</p>
       <div class="lang-toggle-wrap" role="group" aria-label="Language selector">
         <button id="btn-en" class="lang-btn lang-active" onclick="setLang('en')" aria-pressed="true">EN</button>
         <span class="lang-sep" aria-hidden="true">|</span>
@@ -239,6 +239,7 @@
           <li><strong>The Muse</strong> (USA) — queried directly from your device</li>
           <li><strong>Arbeitnow</strong> (Germany) — queried directly from your device</li>
           <li><strong>Remotive</strong> (global operations) — queried directly from your device; remote-job listings</li>
+          <li><strong>Himalayas</strong> (global operations) — queried directly from your device; remote-job listings</li>
         </ul>
         <p>Providers queried directly from your device also receive your device's IP address as an inherent part of the network request. None of these providers receive your résumé content, name, email address, or other account information. API keys for the backend-routed providers (Adzuna, Jooble) are stored in our backend vault and are never embedded in the App binary.</p>
 
@@ -830,7 +831,7 @@
         <p>Users in the EU, EEA, UK, Switzerland, Brazil, and Canada are presented with an explicit consent prompt during onboarding. No analytics data is collected before consent is granted. All other users may opt out at any time via the same in-app setting.</p>
 
         <h2>60. International Data Transfers</h2>
-        <p>XentarAI Inc. is incorporated in Canada. Your personal information may be transferred to and processed in the <strong>United States</strong> (Supabase, Anthropic, Google, PostHog, Sentry, ScrapingAnt, Apify, Firecrawl, Resend, AdMob, Jooble, The Muse), the <strong>United Kingdom</strong> (Adzuna), <strong>France</strong> (Mistral AI, Brevo), <strong>Germany</strong> (Arbeitnow), <strong>India</strong> (ZeptoMail), and potentially other countries where our service providers operate (including Remotive, which operates globally).</p>
+        <p>XentarAI Inc. is incorporated in Canada. Your personal information may be transferred to and processed in the <strong>United States</strong> (Supabase, Anthropic, Google, PostHog, Sentry, ScrapingAnt, Apify, Firecrawl, Resend, AdMob, Jooble, The Muse), the <strong>United Kingdom</strong> (Adzuna), <strong>France</strong> (Mistral AI, Brevo), <strong>Germany</strong> (Arbeitnow), <strong>India</strong> (ZeptoMail), and potentially other countries where our service providers operate (including Remotive and Himalayas, which operate globally).</p>
         <p>Safeguards governing these transfers:</p>
         <ul>
           <li><strong>From EU/EEA</strong> — Standard Contractual Clauses (EU SCCs, 2021)</li>
@@ -1025,6 +1026,7 @@
           <li><strong>The Muse</strong> (États-Unis) — interrogé directement depuis votre appareil</li>
           <li><strong>Arbeitnow</strong> (Allemagne) — interrogé directement depuis votre appareil</li>
           <li><strong>Remotive</strong> (opérations mondiales) — interrogé directement depuis votre appareil ; annonces de télétravail</li>
+          <li><strong>Himalayas</strong> (opérations mondiales) — interrogé directement depuis votre appareil ; annonces de télétravail</li>
         </ul>
         <p>Les fournisseurs interrogés directement depuis votre appareil reçoivent également l'adresse IP de votre appareil, inhérente à la requête réseau. Aucun de ces fournisseurs ne reçoit le contenu de votre CV, votre nom, votre adresse courriel ni autres renseignements de compte. Les clés API des fournisseurs acheminés via notre infrastructure (Adzuna, Jooble) sont stockées dans notre coffre-fort et ne sont jamais intégrées dans le binaire de l'Application.</p>
 
@@ -1615,7 +1617,7 @@
         <p>Les utilisateurs de l'UE, de l'EEE, du Royaume-Uni, de la Suisse, du Brésil et du Canada se voient présenter une invite de consentement explicite lors de l'intégration. Aucune donnée d'analyse n'est collectée avant l'octroi du consentement. Tous les autres utilisateurs peuvent se désabonner à tout moment via le même paramètre.</p>
 
         <h2>60. Transferts internationaux de données</h2>
-        <p>XentarAI Inc. est constituée en personne morale au Canada. Vos renseignements personnels peuvent être transférés et traités aux <strong>États-Unis</strong> (Supabase, Anthropic, Google, PostHog, Sentry, ScrapingAnt, Apify, Firecrawl, Resend, AdMob, Jooble, The Muse), au <strong>Royaume-Uni</strong> (Adzuna), en <strong>France</strong> (Mistral AI, Brevo), en <strong>Allemagne</strong> (Arbeitnow), en <strong>Inde</strong> (ZeptoMail), ainsi que potentiellement dans d'autres pays où nos fournisseurs opèrent (y compris Remotive, qui opère à l'échelle mondiale).</p>
+        <p>XentarAI Inc. est constituée en personne morale au Canada. Vos renseignements personnels peuvent être transférés et traités aux <strong>États-Unis</strong> (Supabase, Anthropic, Google, PostHog, Sentry, ScrapingAnt, Apify, Firecrawl, Resend, AdMob, Jooble, The Muse), au <strong>Royaume-Uni</strong> (Adzuna), en <strong>France</strong> (Mistral AI, Brevo), en <strong>Allemagne</strong> (Arbeitnow), en <strong>Inde</strong> (ZeptoMail), ainsi que potentiellement dans d'autres pays où nos fournisseurs opèrent (y compris Remotive et Himalayas, qui opèrent à l'échelle mondiale).</p>
         <p>Garanties régissant ces transferts :</p>
         <ul>
           <li><strong>Depuis l'UE/EEE</strong> — Clauses contractuelles types (CCT UE, 2021)</li>
@@ -1713,8 +1715,8 @@
     const FR_EYEBROW = 'Resuvia — Légal';
     const EN_HERO   = 'Privacy Policy';
     const FR_HERO   = 'Politique de confidentialité';
-    const EN_DATE   = 'Effective Date: June 6, 2026  ·  Last Updated: August 23, 2026';
-    const FR_DATE   = 'Date d’entrée en vigueur : 6 juin 2026  ·  Dernière mise à jour : 23 août 2026';
+    const EN_DATE   = 'Effective Date: June 6, 2026  ·  Last Updated: September 9, 2026';
+    const FR_DATE   = 'Date d’entrée en vigueur : 6 juin 2026  ·  Dernière mise à jour : 9 septembre 2026';
 
     function setLang(lang) {
       const isFr = lang === 'fr';

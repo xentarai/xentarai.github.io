@@ -4,7 +4,7 @@
 
   <url>
     <loc>https://xentarai.com/</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -15,7 +15,7 @@
 
   <url>
     <loc>https://xentarai.com/products/resuvia/</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -26,11 +26,35 @@
       <image:loc>https://xentarai.com/products/resuvia/images/qr-android.png</image:loc>
       <image:title>QR code to download Resuvia on Google Play</image:title>
     </image:image>
+    <image:image>
+      <image:loc>https://xentarai.com/products/resuvia/images/ios/ios-1-home@2x.jpg</image:loc>
+      <image:title>Resuvia on iPhone — upload a PDF or build a resume from scratch</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://xentarai.com/products/resuvia/images/ios/ios-2-job-details@2x.jpg</image:loc>
+      <image:title>Resuvia on iPhone — paste a job link and set your target role</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://xentarai.com/products/resuvia/images/ios/ios-3-match-report@2x.jpg</image:loc>
+      <image:title>Resuvia on iPhone — see your ATS score before and after</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://xentarai.com/products/resuvia/images/ios/ios-4-templates-export@2x.jpg</image:loc>
+      <image:title>Resuvia on iPhone — pick a template, export PDF or DOCX</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://xentarai.com/products/resuvia/images/ios/ios-5-career-guide@2x.jpg</image:loc>
+      <image:title>Resuvia on iPhone — AI career roadmap and interview prep</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://xentarai.com/products/resuvia/images/ios/ios-6-brand@2x.jpg</image:loc>
+      <image:title>Resuvia on iPhone — AI-powered resume optimization</image:title>
+    </image:image>
   </url>
 
   <url>
     <loc>https://xentarai.com/products/resuvia/support.html</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -72,14 +96,14 @@
 
   <url>
     <loc>https://xentarai.com/products/resuvia/privacy.html</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
 
   <url>
     <loc>https://xentarai.com/products/resuvia/terms.html</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
