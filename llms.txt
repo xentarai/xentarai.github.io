@@ -4,11 +4,11 @@
 
 ## Resuvia
 
-Resuvia is a free AI-powered resume analyzer and ATS score checker, available on Android (iOS coming soon). Users upload a resume PDF and a job description (pasted or via URL), and Resuvia returns an ATS compatibility score, section-by-section improvement feedback, AI-written resume rewrites tailored to that job, real job board matches, and a personalized AI career roadmap with interview prep questions.
+Resuvia is a free AI-powered resume analyzer and ATS score checker, available on Android and iOS. Users upload a resume PDF and a job description (pasted or via URL), and Resuvia returns an ATS compatibility score, section-by-section improvement feedback, AI-written resume rewrites tailored to that job, real job board matches, and a personalized AI career roadmap with interview prep questions.
 
 Key facts:
-- Platform: Android (Google Play), live now. iOS build complete and App Store-approved, release imminent — first-look screenshots at https://xentarai.com/products/resuvia/#first-look.
-- Pricing: Free tier includes 1 AI analysis/day, ATS score + breakdown, AI rewrites, Resume Refinement (shares analysis quota), all 19 resume templates including regional CV formats (PDF/DOCX export), 1 resume + 1 cover letter download/day, Resume Version History, Application Tracker, Insights Dashboard, 1 AI Career Roadmap generation/day, real job board matches (15 searches/day). Pro subscription unlocks 20 analyses/day (Refine shares same pool), unlimited downloads, 20 Career Roadmap generations/day, 60 job searches/day, priority AI models, and no ads — $9.99/month or $89.99/year (50% off, limited time) on Google Play; App Store pricing announced at iOS launch. One-time credit packs ($0.99 each on both stores) add +3 analyses, +5 resume downloads, or +10 cover letter downloads without a subscription.
+- Platform: Android (Google Play) and iOS (App Store), both live now.
+- Pricing: Free tier includes 1 AI analysis/day, ATS score + breakdown, AI rewrites, Resume Refinement (shares analysis quota), all 19 resume templates including regional CV formats (PDF/DOCX export), 1 resume + 1 cover letter download/day, Resume Version History, Application Tracker, Insights Dashboard, 1 AI Career Roadmap generation/day, real job board matches (15 searches/day). Pro subscription unlocks 20 analyses/day (Refine shares same pool), unlimited downloads, 20 Career Roadmap generations/day, 60 job searches/day, priority AI models, and no ads — $9.99/month or $89.99/year (50% off, limited time), the same price on Google Play and the App Store. One-time credit packs ($0.99 each on both stores) add +3 analyses, +5 resume downloads, or +10 cover letter downloads without a subscription.
 - Privacy: resume PDF is parsed and encrypted (AES-256) locally on-device; the file itself is never uploaded to Xentar AI servers, only extracted text is sent to AI providers for analysis.
 - AI models used for analysis: a routed chain including Gemini, Mistral, and Claude.
 - Job description input accepts pasted text or a URL from most major job boards (LinkedIn, Indeed, Glassdoor, ZipRecruiter, Greenhouse, Lever, Workday, Ashby, etc.), plus live listings from Adzuna, Jooble, Remotive, TheMuse, Himalayas, and Arbeitnow, with a target-country picker covering 70+ countries.
@@ -21,6 +21,7 @@ Key facts:
 - [Resuvia — Privacy Policy](https://xentarai.com/products/resuvia/privacy.html)
 - [Resuvia — Terms of Service](https://xentarai.com/products/resuvia/terms.html)
 - [Google Play listing](https://play.google.com/store/apps/details?id=com.xentarai.resuvia)
+- [App Store listing](https://apps.apple.com/app/id6788620805)
 
 ## Company
 
