@@ -553,14 +553,6 @@
 .rv-store-sub { font-size: 0.68rem; letter-spacing: 0.04em; opacity: 0.7; }
 .rv-store-name { font-family: var(--font-display); font-size: 1rem; font-weight: 700; }
 
-/* PLATFORM TAG VARIANTS */
-.rv-platform-tag-soon {
-  background: rgba(255,255,255,0.0);
-  color: var(--text-muted);
-  border: 1.5px solid var(--border);
-  opacity: 0.65;
-}
-
 /* DOWNLOAD — referral banner (shown only when a ?ref=<code> link is used) */
 .rv-referral-banner {
   max-width: 560px;
@@ -639,11 +631,6 @@
   background: rgba(255,255,255,0.18);
   transform: translateY(-3px);
 }
-.rv-store-card-soon {
-  opacity: 0.55;
-  cursor: default;
-  pointer-events: none;
-}
 .rv-store-card-header {
   display: flex;
   align-items: center;
@@ -654,17 +641,6 @@
 .rv-live-chip {
   background: #10B981;
   color: #fff;
-  font-size: 0.62rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  padding: 2px 8px;
-  border-radius: var(--radius-full);
-  flex-shrink: 0;
-}
-.rv-soon-chip {
-  background: rgba(255,255,255,0.2);
-  color: rgba(255,255,255,0.7);
   font-size: 0.62rem;
   font-weight: 700;
   letter-spacing: 0.06em;
@@ -684,20 +660,6 @@
 .rv-qr-wrap img {
   display: block;
   border-radius: 4px;
-}
-.rv-qr-placeholder {
-  width: 156px;
-  height: 156px;
-  flex-direction: column;
-  gap: 8px;
-}
-.rv-qr-soon-icon { font-size: 2.4rem; }
-.rv-qr-soon-text {
-  font-size: 0.72rem;
-  color: var(--text-secondary);
-  text-align: center;
-  line-height: 1.5;
-  margin: 0;
 }
 .rv-qr-caption {
   font-size: 0.72rem;
